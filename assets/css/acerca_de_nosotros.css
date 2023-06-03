@@ -36,6 +36,12 @@ html {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.card img{
+    width: 100%;
 }
 
 .about-section {
@@ -73,18 +79,22 @@ html {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    font-weight: 700;
+    background-color: #F45757;
     text-align: center;
     cursor: pointer;
     width: 100%;
 }
   
 .button:hover {
-    background-color: #555;
+    background-color: rgba(235, 31, 41, 0.5);
 }
 
 /*----------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
+    #contenedorPrincipal{
+        background-color:  rgba(230, 14, 26, 1);
+    }
     .column {
         float: left;
         width: 33.3%;
