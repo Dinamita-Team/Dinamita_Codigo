@@ -1,5 +1,5 @@
 /*Google Fonts - Poppins*/
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
 
 /*Animate.css*/
     @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
@@ -110,7 +110,7 @@ body{
 }
 
 /*LARGE SCREEN*/
-@media(min-width: 700px){
+@media(min-width: 1150px){
     body{
         padding: 0 4rem;
     }
