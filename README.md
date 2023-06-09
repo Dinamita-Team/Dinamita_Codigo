@@ -1,7 +1,7 @@
 # Dinamita_Codigo
 Codigo de nuestro proyecto
 
-##Equipo conformado
+## Equipo conformado
 - Sarid Herrera
 - Laura Guevara
 - Felipe Delgado
