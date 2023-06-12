@@ -27,7 +27,7 @@ header{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    padding-block: 30px;
+    padding-block: 20px;
     background-image: linear-gradient(to right, #E60E1A, #FBC400, #fff );
 }
 
@@ -49,7 +49,7 @@ header div h1{
     justify-content: center;
     width: 100vw;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
     background-image: linear-gradient(to right, #fff, #FAFAFA);
 }
 
@@ -71,17 +71,22 @@ main{
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 80px;
-    
     max-width: 1200px;
 }
 
 .container-img{
-    flex: 1;
-    background-color: #f7f7f9;
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    align-items: center;
+    justify-content: left;
+}
+.container-img img{
+    width: 500px;
 }
 
 .container-info-product{
-    flex: 1;
+    flex: 6;
     display: flex;
     flex-direction: column;
 }
@@ -113,14 +118,14 @@ main{
 }
 
 .container-details-product{
-    padding: 30px 0;
+    padding-top: 30px 0;
 }
 
 .form-group{
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .form-group label{
@@ -152,9 +157,16 @@ main{
 
 .container-add-cart{
     display: flex;
+    align-items: center;
     gap: 20px;
-    padding-bottom: 30px;
+    padding-block: 30px;
     border-bottom: 1px solid #ebe9e9;
+}
+
+.container-add-cart label{
+    width: 100px;
+    font-weight: 700;
+    color: #222222;
 }
 
 .container-quantity{
@@ -353,7 +365,7 @@ main{
 }
 
 footer{
-    padding: 30px;
+    padding: 20px;
     width: 100vw;
     text-align: center;
     color: #ffffff;
