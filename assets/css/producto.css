@@ -23,6 +23,10 @@ header{
     justify-content: center;
 }
 
+header h1{
+    color: rgb(0, 0, 0);
+}
+
 .container-title{
     padding: 30px;
     background-color: #eee;
@@ -95,7 +99,7 @@ main{
 }
 
 .btn-clean:hover{
-    color: #1bbeb4;
+    color: rgb(250, 122, 2);
 }
 
 .container-add-cart{
@@ -144,10 +148,10 @@ main{
 }
 
 .fa-chevron-down:hover{
-    color: #1bbeb4;
+    color: #ff8000;
 }
 .fa-chevron-up:hover{
-    color: #1bbeb4;
+    color: #ff8000;
 }
 
 .btn-add-to-cart{
@@ -164,7 +168,7 @@ main{
 }
 
 .btn-add-to-cart:hover{
-    color: #1bbeb4;
+    color: #ff8000;
 }
 
 .hidden{
@@ -181,8 +185,8 @@ main{
 }
 
 .title-description,
-.tittle-additonal-information,
-.tittle-additonal-reviews{
+.title-additional-information,
+.title-additional-reviews{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -190,8 +194,8 @@ main{
 }
 
 .title-description h4,
-.tittle-additonal-information h4,
-.tittle-additonal-reviews h4{
+.title-additional-information h4,
+.title-additional-reviews h4{
     font-weight: 300;
     color: #666;
     font-size: 14px;
@@ -232,7 +236,7 @@ main{
 }
 
 .container-buttons-social a:hover{
-    color: #1bbeb4;
+    color: #ff8000;
 }
 
 
@@ -281,11 +285,11 @@ main{
 }
 
 .text-product h3:hover{
-    color: #1bbeb4;
+    color: #ff8000;
 }
 
 .text-product p:hover{
-    color: #1bbeb4;
+    color: #ff8000;
 }
 
 .text-product p{
