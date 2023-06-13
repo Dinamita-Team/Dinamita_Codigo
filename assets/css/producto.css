@@ -28,7 +28,7 @@ header{
     justify-content: center;
     width: 100vw;
     padding-block: 20px;
-    background-image: linear-gradient(to right, #E60E1A, #FBC400, #fff );
+    background-image: linear-gradient(to right, #E60E1A, #FBC400, #FAFAFA );
 }
 
 header div{
