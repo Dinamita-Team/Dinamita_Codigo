@@ -22,13 +22,34 @@ img{
     max-width: 100%;
 }
 
-header{
+.fondo{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     padding-block: 20px;
-    background-image: linear-gradient(to right, #E60E1A, #FBC400, #fff );
+    background: linear-gradient(to right, #E60E1A, #F42F2F, #FBC400 );
+    /* background-image: linear-gradient(to right, #E60E1A, #FBC400, #fff ); */
+    min-height: 15vh;
+    background-size: 180% 180%;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+	animation: gradient-animation 3s ease infinite;
+}
+
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 header div{
@@ -364,13 +385,10 @@ main{
     font-size: 13px;
 }
 
-footer{
+.fondo p{
     padding: 20px;
-    width: 100vw;
     text-align: center;
     color: #ffffff;
-    background-image: linear-gradient(to right, #fff, #FBC400, #E60E1A);
-    font-family: 'Poppins', sans-serif;
 }
 
 
