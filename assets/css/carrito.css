@@ -55,6 +55,32 @@ header div h1{
     font-family: 'Poppins', sans-serif;
 }
 
+.container-title{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-image: linear-gradient(to right, #fff, #FAFAFA);
+    box-sizing: border-box;
+}
+
+.container-title div{
+    width: 100vw;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.container-title div span{
+    display: flex;
+    justify-content: right;
+    color: #222;
+    font-weight: 800;
+    font-style: italic;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
 .contenedor{
     max-width: 1200px;
     padding: 10px;
