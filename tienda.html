@@ -5,13 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Tienda</title>
 
+    <link rel="shortcut icon" href="assets/img/icono.ico" type="image/x-icon">
     <!-- iconscout cdn -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"/>
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="assets/css/tienda.css">
+
 
 </head>
 <body>
-    nav
+    <!-- barra lateral -->
+    <nav class="sidebar locked">
+        <div class="logo_items flex ">
+          <span class="nav_image">
+            <img src="assets/img/Logo-pagina.png" alt="logo_img" />
+          </span>
+          <span class="logo_name">DINAMITA</span>
+          <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+          <i class="bx bx-x" id="sidebar-close"></i>
+        </div>
+  
+        <div class="menu_container">
+          <div class="menu_items">
+            <ul class="menu_item">
+              <div class="menu_title flex">
+                <span class="title">Dashboard</span>
+                <span class="line"></span>
+              </div>
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class="bx bx-home-alt"></i>
+                  <span>Overview</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class="bx bx-grid-alt"></i>
+                  <span>All Projects</span>
+                </a>
+              </li>
+            </ul>
+  
+            <ul class="menu_item">
+              <div class="menu_title flex">
+                <span class="title">Editor</span>
+                <span class="line"></span>
+              </div>
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class="bx bxs-magic-wand"></i>
+                  <span>Magic Build</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class="bx bx-folder"></i>
+                  <span>New Projects</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class="bx bx-cloud-upload"></i>
+                  <span>Upload New</span>
+                </a>
+              </li>
+            </ul>
+  
+            <ul class="menu_item">
+              <div class="menu_title flex">
+                <span class="title">Setting</span>
+                <span class="line"></span>
+              </div>
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class="bx bx-flag"></i>
+                  <span>Notice Board</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class="bx bx-award"></i>
+                  <span>Award</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class="bx bx-cog"></i>
+                  <span>Setting</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    <!-- Barra de Navegacion container -->
+    <nav>
+        <div class="navbar flex">
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" name="" id="" placeholder="Busca el producto">
+                <i class="uil uil-filter"></i>
+            </div>
+            <div class="create">
+                <div class="btn btn-primary">
+                    <i class="uil uil-bell"></i>
+                </div>
+
+                <div>
+                    <i class="uil uil-envelope-alt btn"></i>
+                </div>
+
+                <div class="profile-photo">
+                    <img src="assets/img/felipe.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
 
     <script src="assets/js/tienda.js"></script>
 </body>
