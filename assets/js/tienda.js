@@ -1,55 +1,68 @@
-// Selecting the sidebar and buttons
-const sidebar = document.querySelector(".sidebar");
-const sidebarOpenBtn = document.querySelector("#sidebar-open");
-const sidebarCloseBtn = document.querySelector("#sidebar-close");
-const sidebarLockBtn = document.querySelector("#lock-icon");
+const body = document.querySelector("body"),
+      modeToggle = body.querySelector(".mode-toggle");
+      sidebar = body.querySelector("nav");
+      sidebarToggle = body.querySelector(".sidebar-toggle");
 
-// Function to toggle the lock state of the sidebar
-/**
- * La función alterna el estado de bloqueo de una barra lateral y actualiza su capacidad de
- * desplazamiento y el icono del botón de bloqueo en consecuencia.
- */
-const toggleLock = () => {
-  sidebar.classList.toggle("locked");
-  // If the sidebar is not locked
-  if (!sidebar.classList.contains("locked")) {
-    sidebar.classList.add("hoverable");
-    sidebarLockBtn.classList.replace("bx-lock-alt", "bx-lock-open-alt");
-  } else {
-    sidebar.classList.remove("hoverable");
-    sidebarLockBtn.classList.replace("bx-lock-open-alt", "bx-lock-alt");
-  }
-};
-
-// Function to hide the sidebar when the mouse leaves
-const hideSidebar = () => {
-  if (sidebar.classList.contains("hoverable")) {
-    sidebar.classList.add("close");
-  }
-};
-
-// Function to show the sidebar when the mouse enter
-const showSidebar = () => {
-  if (sidebar.classList.contains("hoverable")) {
-    sidebar.classList.remove("close");
-  }
-};
-
-// Function to show and hide the sidebar
-const toggleSidebar = () => {
-  sidebar.classList.toggle("close");
-};
-
-// If the window width is less than 800px, close the sidebar and remove hoverability and lock
-if (window.innerWidth < 800) {
-  sidebar.classList.add("close");
-  sidebar.classList.remove("locked");
-  sidebar.classList.remove("hoverable");
+let getMode = localStorage.getItem("mode");
+if(getMode && getMode ==="dark"){
+    body.classList.toggle("dark");
 }
 
-// Adding event listeners to buttons and sidebar for the corresponding actions
-sidebarLockBtn.addEventListener("click", toggleLock);
-sidebar.addEventListener("mouseleave", hideSidebar);
-sidebar.addEventListener("mouseenter", showSidebar);
-sidebarOpenBtn.addEventListener("click", toggleSidebar);
-sidebarCloseBtn.addEventListener("click", toggleSidebar);
+let getStatus = localStorage.getItem("status");
+if(getStatus && getStatus ==="close"){
+    sidebar.classList.toggle("close");
+}
+
+modeToggle.addEventListener("click", () =>{
+    body.classList.toggle("dark");
+    if(body.classList.contains("dark")){
+        localStorage.setItem("mode", "dark");
+    }else{
+        localStorage.setItem("mode", "light");
+    }
+});
+
+sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+    if(sidebar.classList.contains("close")){
+        localStorage.setItem("status", "close");
+    }else{
+        localStorage.setItem("status", "open");
+    }
+})
+
+
+
+
+// categories
+
+
+// accordion variables
+const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
+const accordion = document.querySelectorAll('[data-accordion]');
+
+for (let i = 0; i < accordionBtn.length; i++) {
+
+  accordionBtn[i].addEventListener('click', function () {
+
+    const clickedBtn = this.nextElementSibling.classList.contains('active');
+
+    for (let i = 0; i < accordion.length; i++) {
+
+      if (clickedBtn) break;
+
+      if (accordion[i].classList.contains('active')) {
+
+        accordion[i].classList.remove('active');
+        accordionBtn[i].classList.remove('active');
+
+      }
+
+    }
+
+    this.nextElementSibling.classList.toggle('active');
+    this.classList.toggle('active');
+
+  });
+
+}
