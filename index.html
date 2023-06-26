@@ -9,9 +9,9 @@
     
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/productos-index.css">
      
     <!----===== Iconscout CSS ===== -->
-    
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Tienda</title> 
@@ -84,6 +84,15 @@
                   <i class="uil uil-filter"></i>
                 </div>
                 <div class="create">
+
+                  <div class="btn">
+                    <a href="./carrito.html">
+                        <i class="uil uil-shopping-cart">
+                            <span>Carrito</span>
+                        </i>
+                    </a>
+                  </div>
+
                   <div class="btn">
                     <i class="uil uil-bell"></i>
                   </div>
@@ -93,7 +102,7 @@
                   </div>
         
                   <div class="profile-photo">
-                    <img src="images/Sarid.jfif" alt="">
+                    <img src="./assets/img/Images/Sarid.jfif" alt="">
                   </div>
                 </div>
               </div>
@@ -154,6 +163,7 @@
 
                     <!-- END STORIES -->
 
+
                     <!-- productos principales -->
                     <div class="container">
                         <div class="products">
@@ -175,6 +185,25 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- lista de productos en general -->
+                    <div>
+                                            
+                        <div class="wrapper">
+                            <aside>
+                            </aside>
+                            <main class="main-productos">
+                                <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+                                <div id="contenedor-productos" class="contenedor-productos">
+                                    <!-- Esto se va a rellenar con JS -->
+                                </div>
+                            </main>
+                        </div>
+                        
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+                        <script src="./assets/js/lista de productos/main.js"></script>
+                        <script src="./assets/js/lista de productos/menu.js"></script>
                     </div>
 
                 </div>
