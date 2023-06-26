@@ -140,7 +140,7 @@ nav.close .logo_name{
   .container{
     display: flex;
     gap: 2rem;
-    width: 93%;
+    width: 100%;
     margin: 0 auto;
   }
   
@@ -172,7 +172,10 @@ nav.close .logo_name{
     opacity: 0.8;
     background: var(--primary-color);
   }
-  
+
+  .awesome{
+    color: #fff;
+  }
   
   .text-bold{
     font-weight: 500;
