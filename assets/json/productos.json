@@ -1,0 +1,346 @@
+[
+    {
+        "id": "construccion-01",
+        "titulo": "Cemento Argos Gris 50kg",
+        "imagen": "./assets/img/productos/auriculares/1.webp",
+        "categoria": {
+            "nombre": "Construcción",
+            "id": "construccion"
+        },
+        "precio": 30000
+    },
+    {
+        "id": "construccion-02",
+        "titulo": "Teja Arquitectonica Galvanizada",
+        "imagen": "./assets/img/productos/bombillo/1.webp",
+        "categoria": {
+            "nombre": "Construcción",
+            "id": "construccion"
+        },
+        "precio": 71890
+    },
+    {
+        "id": "construccion-03",
+        "titulo": "Tanque de Agua 1.000 Litros Negro Eternit",
+        "imagen": "./assets/img/productos/camara/1.webp",
+        "categoria": {
+            "nombre": "Construcción",
+            "id": "construccion"
+        },
+        "precio": 545900
+    },
+    {
+        "id": "construccion-04",
+        "titulo": "Tubo Sanitario 4' x 6 Mts.",
+        "imagen": "./assets/img/productos/dron%20gris/1.webp",
+        "categoria": {
+            "nombre": "Construcción",
+            "id": "construccion"
+        },
+        "precio": 118900
+    },
+    {
+        "id": "construccion-05",
+        "titulo": "Varilla Corrugada (1/2 Pulg) X 6M",
+        "imagen": "./assets/img/productos/dron%20negro/1.webp",
+        "categoria": {
+            "nombre": "Construcción",
+            "id": "construccion"
+        },
+        "precio": 25640
+    },
+    {
+        "id": "construccion-06",
+        "titulo": "Bloquelón 80X7.7X22.8cm 9.8k 4.93u/m2",
+        "imagen": "./assets/img/productos/gafas/1.webp",
+        "categoria": {
+            "nombre": "Construcción",
+            "id": "construccion"
+        },
+        "precio": 4900
+    },
+    {
+        "id": "construccion-07",
+        "titulo": "Polisombra Negra 80% 1.0mt x 4.0mt",
+        "imagen": "./assets/img/productos/microfono/1.webp",
+        "categoria": {
+            "nombre": "Construcción",
+            "id": "construccion"
+        },
+        "precio": 10990
+    },
+    {
+        "id": "construccion-08",
+        "titulo": "Malla 15X15Cm 4.0Mm (Xx-084) 6X2.35M",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Construcción",
+            "id": "construccion"
+        },
+        "precio": 97700
+    },
+
+    
+
+
+
+    {
+        "id": "herramienta-01",
+        "titulo": "Taladro Percutor 3 Velocidades 20 V",
+        "imagen": "./assets/img/productos/reloj/1.webp",
+        "categoria": {
+            "nombre": "Herramienta y maquinaria",
+            "id": "herramienta"
+        },
+        "precio": 2529900
+    },
+    {
+        "id": "herramienta-02",
+        "titulo": "Rebajadora Compacta de 18 V",
+        "imagen": "./assets/img/productos/ventilador/1.webp",
+        "categoria": {
+            "nombre": "Herramienta y maquinaria",
+            "id": "herramienta"
+        },
+        "precio": 969900
+    },
+    {
+        "id": "herramienta-03",
+        "titulo": "Pistola de Calor 1500W",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Herramienta y maquinaria",
+            "id": "herramienta"
+        },
+        "precio": 249900
+    },
+    {
+        "id": "herramienta-04",
+        "titulo": "Polichadora Orbital 9 1/2 Pulgadas",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+            "categoria": {
+            "nombre": "Herramienta y maquinaria",
+            "id": "herramienta"
+        },
+        "precio": 109900
+    },
+    {
+        "id": "herramienta-05",
+        "titulo": "Pistola soplar/aspirar 600W",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Herramienta y maquinaria",
+            "id": "herramienta"
+        },
+        "precio": 458900
+    },
+    {
+        "id": "herramienta-06",
+        "titulo": "Pulidora Angular 9Pulg 2200W",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Herramienta y maquinaria",
+            "id": "herramienta"
+        },
+        "precio": 697900
+    },
+    {
+        "id": "herramienta-07",
+        "titulo": "Sierra Circular 7-1/4-pulg 1600W",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+    "categoria": {
+            "nombre": "Herramienta y maquinaria",
+            "id": "herramienta"
+        },
+        "precio": 415900
+    },
+    {
+        "id": "herramienta-08",
+        "titulo": "Caladora 350w 3000RPM",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Herramienta y maquinaria",
+            "id": "herramienta"
+        },
+        "precio": 99900
+    },
+
+
+
+
+
+    {
+        "id": "acabados-01",
+        "titulo": "Pintura para Interior 5 Galones",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Acabados",
+            "id": "acabados"
+        },
+        "precio": 329900
+    },
+    {
+        "id": "acabados-02",
+        "titulo": "Pintura para Interior/Exterior Impermeabilizante 1/4",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Acabados",
+            "id": "acabados"
+        },
+        "precio": 39400
+    },
+    {
+        "id": "acabados-03",
+        "titulo": "Puerta Triplex Okume 60x200cm",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Acabados",
+            "id": "acabados"
+        },
+        "precio": 131900
+    },
+    {
+        "id": "acabados-04",
+        "titulo": "Puerta Prepintada Sinfonía 80x200 Cm",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Acabados",
+            "id": "acabados"
+        },
+        "precio": 184900
+    },
+    {
+        "id": "acabados-05",
+        "titulo": "Pared Concreto Arq 50x20cm",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Acabados",
+            "id": "acabados"
+        },
+        "precio": 123900
+    },
+    {
+        "id": "acabados-06",
+        "titulo": "Piso Cerámico Porto Multicolor 45.8x45.8 cm ",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Acabados",
+            "id": "acabados"
+        },
+        "precio": 61803
+    },
+    {
+        "id": "acabados-07",
+        "titulo": "Ventana 100x100cm PVC Altavista",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Acabados",
+            "id": "acabados"
+        },
+        "precio": 349900
+    },
+    {
+        "id": "acabados-08",
+        "titulo": "Puerta 180x210cm Corrediza Vidrio Templado 5mm",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Acabados",
+            "id": "acabados"
+        },
+        "precio": 2273900
+    },
+
+
+
+
+
+    {
+        "id": "iluminacion-01",
+        "titulo": "Mini Globo Led Filam 360Lm 4W E27 Ambar",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Iluminación",
+            "id": "iluminacion"
+        },
+        
+        "precio": 9900
+    },
+    {
+        "id": "iluminacion-02",
+        "titulo": "Bombillo Globo 90 Led Filam 260Lm 4W E27 Ambar",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Iluminación",
+            "id": "iluminacion"
+        },
+        
+        "precio": 29900
+    },
+    {
+        "id": "iluminacion-03",
+        "titulo": "Bombillo Led Gu10 Inteligente 5w Rgb",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Iluminación",
+            "id": "iluminacion"
+        },
+        
+        "precio": 29900
+    },
+    {
+        "id": "iluminacion-04",
+        "titulo": "Bombillo Led Gu10 Inteligente Wi-Fi Luz Fría Y Cálida + Colores",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Iluminación",
+            "id": "iluminacion"
+        },
+        
+        "precio": 97900
+    },
+    {
+        "id": "iluminacion-05",
+        "titulo": "Reflector Led 30W Smart CCT - RGB Dimerizable",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Iluminación",
+            "id": "iluminacion"
+        },
+        
+        "precio": 99900
+    },
+    {
+        "id": "iluminacion-06",
+        "titulo": "Reflector Led 3500lm 50w Luz Blanca Ip65",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Iluminación",
+            "id": "iluminacion"
+        },
+        
+        "precio": 54900
+    },
+    {
+        "id": "iluminacion-07",
+        "titulo": "Luz Emergencia Led R1 2x1.6W",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Iluminación",
+            "id": "iluminacion"
+        },
+        
+        "precio": 95900
+    },
+    {
+        "id": "iluminacion-08",
+        "titulo": "Luz Emergencia Led R2 2.4W",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Iluminación",
+            "id": "iluminacion"
+        },
+        
+        "precio": 84900
+    }
+
+]
