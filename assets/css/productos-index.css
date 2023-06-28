@@ -5,7 +5,7 @@
     --clr-main-light: #785ce9;
     --clr-white: #000000;
     --clr-gray: #e2e2e2;
-    --clr-red: #961818;
+    --clr-red: hsl(357, 89%, 48%);
     --clr-yellow: #FBC400;
     --clr-orange: #FF8000;
 }
@@ -118,7 +118,7 @@ aside {
 }
 
 .numerito {
-    background-color: var(--clr-white);
+    background-color: var(--clr-red);
     color: var(--clr-main);
     padding: .15rem .25rem;
     border-radius: .25rem;
