@@ -55,6 +55,10 @@ aside {
     font-size: 1.3rem;
 }
 
+.logo a{
+    color: var(--clr-black);
+}
+
 .menu {
     display: flex;
     flex-direction: row;
