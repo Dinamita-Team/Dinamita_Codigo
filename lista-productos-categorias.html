@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FERRE-MARKET</title>
+    <title>DINAMITA - EXPLORAR</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./assets/css/productos-index.css">
 </head>
 <body>
 
     <div class="wrapper">
         <header class="header-mobile">
-            <h1 class="logo">FERRE | MARKET</h1>
+            <h1 class="logo">DINAMITA</h1>
             <button class="open-menu" id="open-menu">
                 <i class="bi bi-list"></i>
             </button>
         </header>
-        <aside>
+        <aside class="aside-Productos">
             <button class="close-menu" id="close-menu">
                 <i class="bi bi-x"></i>
             </button>
             <header>
-                <h1 class="logo">FERRE | MARKET</h1>
+                <h1 class="logo">DINAMITA</h1>
             </header>
             <nav>
                 <ul class="menu">
 
                     <li>
-                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                        <button id="todos" class="boton-menu boton-categoria active"></i> Todos los productos</button>
                     </li>
                     <li>
-                        <button id="construccion" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Construcción</button>
+                        <button id="accesorios" class="boton-menu boton-categoria"></i> Accesorios</button>
                     </li>
                     <li>
-                        <button id="herramienta" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Herramienta y maquinaria</button>
+                        <button id="gadgets" class="boton-menu boton-categoria"></i> Gadgets</button>
                     </li>
                     <li>
-                        <button id="acabados" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Acabados</button>
+                        <button id="sonido" class="boton-menu boton-categoria"></i> Sonido</button>
                     </li>
                     <li>
-                        <button id="iluminacion" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Iluminación</button>
+                        <button id="drones" class="boton-menu boton-categoria"></i> Drones</button>
                     </li>
 
                     <li>
@@ -52,7 +52,7 @@
                 </ul>
             </nav>
         </aside>
-        <main>
+        <main class="main-lista-productos">
             <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
             <div id="contenedor-productos" class="contenedor-productos">
                 <!-- Esto se va a rellenar con JS -->
@@ -66,7 +66,7 @@
     </footer>
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./assets/js/lista de productos/main.js"></script>
+    <script src="./assets/js/lista de productos/menu.js"></script>
 </body>
 </html>
