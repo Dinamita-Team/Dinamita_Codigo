@@ -167,6 +167,10 @@ nav.close .logo_name{
     background: var(--color-primary);
     color: white;
   }
+
+  .carrito{
+    color: white;
+  }
   
   .btn:hover{
     opacity: 0.8;
