@@ -39,7 +39,7 @@ a {
 }
 
 .aside-Productos {
-    padding: 1.5rem 2rem 0rem 2rem;
+    padding: 1rem 2rem 0rem 2rem;
     position: absolute;
     z-index: 6;
     background-color: var(--clr-main);
@@ -56,7 +56,12 @@ a {
 
 .logo {
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 2vw;
+    color: var(--clr-red);
+}
+
+.logo h1 a{
+    color: var(--clr-red);
 }
 
 .menu {
@@ -75,13 +80,13 @@ a {
     gap: 1rem;
     font-weight: 600;
     padding-block: 0.5rem;
-    padding-inline: 1vw;
-    font-size: 2vw;
+    padding-inline: 3vw;
+    font-size: 1.5vw;
     width: 100%;
 }
 
 .boton-menu.active {
-    background-color: var(--clr-black   );
+    background-color: var(--clr-red);
     color: var(--clr-main);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -138,7 +143,6 @@ a {
 
 .main-lista-productos{
     margin-top: 10em;
-    margin-inline: 1em;
     padding: 2em;
     background-color: var(--clr-gray);
     border-radius: 2em;
@@ -329,12 +333,12 @@ a {
 }
 
 footer{
-    background-color: var(--clr-main);
+    background-color: var(--clr-white);
     padding: 3em;
 }
 
 .texto-footer{
-    color: var(--clr-gray);
+    color: var(--clr-black);
 }
 
 /*** MEDIA QUERIES ***/
@@ -357,7 +361,9 @@ footer{
     .menu {
         display: flex;
         flex-direction: column;
+        position: absolute;
         gap: .5rem;
+        background-color: var(--clr-white);
     }
 
     .wrapper {
@@ -365,6 +371,10 @@ footer{
         display: flex;
         flex-direction: column;
         background-color: var(--clr-main);
+    }
+
+    .logo{
+        font-size: 3vw;
     }
 
     aside {
@@ -378,7 +388,7 @@ footer{
         opacity: 0;
         visibility: hidden;
         transition: .2s;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding-top: 2.5em;
         padding-bottom: 173em;
     }
@@ -387,6 +397,11 @@ footer{
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
+        height: 100vh;
+        width: 40vw;
+        padding-top: 2em;
+        padding-bottom: 30em;
+        justify-content: space-evenly;
     }
 
     .boton-menu.active::before,
@@ -401,9 +416,12 @@ footer{
     
 
     main {
-        margin: 1rem;
         margin-top: 0;
         padding: 2rem;
+    }
+
+    .main-lista-productos{
+        margin-top: 0;
     }
 
     .contenedor-productos {
@@ -422,12 +440,12 @@ footer{
     }
 
     .header-mobile .logo {
-        color: var(--clr-gray);
+        color: var(--clr-red);
     }
 
     .open-menu, .close-menu {
         background-color: transparent;
-        color: var(--clr-gray);
+        color: var(--clr-black);
         border: 0;
         font-size: 2rem;
         cursor: pointer;
