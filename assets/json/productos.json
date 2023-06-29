@@ -4,8 +4,8 @@
         "titulo": "Auriculares Pro 6",
         "imagen": "./assets/img/productos/auriculares/1.webp",
         "categoria": {
-            "nombre": "Construcción",
-            "id": "construccion"
+            "nombre": "Sonido",
+            "id": "sonido"
         },
         "precio": 120000
     },
@@ -14,8 +14,8 @@
         "titulo": "Bombillo Smart RGB",
         "imagen": "./assets/img/productos/bombillo/1.webp",
         "categoria": {
-            "nombre": "Construcción",
-            "id": "construccion"
+            "nombre": "Gadgets",
+            "id": "gadgets"
         },
         "precio": 40890
     },
@@ -24,8 +24,8 @@
         "titulo": "Cámara de acción 4K",
         "imagen": "./assets/img/productos/camara/1.webp",
         "categoria": {
-            "nombre": "Construcción",
-            "id": "construccion"
+            "nombre": "Gadgets",
+            "id": "gadgets"
         },
         "precio": 210900
     },
@@ -34,8 +34,8 @@
         "titulo": "Dron R11 FHD - Gris",
         "imagen": "./assets/img/productos/dron%20gris/1.webp",
         "categoria": {
-            "nombre": "Construcción",
-            "id": "construccion"
+            "nombre": "Drones",
+            "id": "drones"
         },
         "precio": 889900
     },
@@ -44,8 +44,8 @@
         "titulo": "Dron R9 HD - Negro",
         "imagen": "./assets/img/productos/dron%20negro/1.webp",
         "categoria": {
-            "nombre": "Construcción",
-            "id": "construccion"
+            "nombre": "Drones",
+            "id": "drones"
         },
         "precio": 669900
     },
@@ -54,8 +54,8 @@
         "titulo": "Gafas S3 - Conección NFC",
         "imagen": "./assets/img/productos/gafas/1.webp",
         "categoria": {
-            "nombre": "Construcción",
-            "id": "construccion"
+            "nombre": "Accesorios",
+            "id": "accesorios"
         },
         "precio": 250900
     },
@@ -64,8 +64,8 @@
         "titulo": "Micrófono Ultraportable - M1",
         "imagen": "./assets/img/productos/microfono/1.webp",
         "categoria": {
-            "nombre": "Construcción",
-            "id": "construccion"
+            "nombre": "Accesorios",
+            "id": "accesorios"
         },
         "precio": 19990
     },
@@ -74,8 +74,8 @@
         "titulo": "Parlante Boom 3 - RGB, Multiconexión",
         "imagen": "./assets/img/productos/parlante/1.webp",
         "categoria": {
-            "nombre": "Construcción",
-            "id": "construccion"
+            "nombre": "Sonido",
+            "id": "sonido"
         },
         "precio": 47700
     },
@@ -84,8 +84,8 @@
         "titulo": "Smartwatch Pro X - Acero Inoxidable",
         "imagen": "./assets/img/productos/reloj/1.jpg",
         "categoria": {
-            "nombre": "Herramienta y maquinaria",
-            "id": "herramienta"
+            "nombre": "Accesorios",
+            "id": "accesorios"
         },
         "precio": 1390000
     },
@@ -94,8 +94,8 @@
         "titulo": "Smart Air - Ventilador portatil",
         "imagen": "./assets/img/productos/ventilador/1.webp",
         "categoria": {
-            "nombre": "Herramienta y maquinaria",
-            "id": "herramienta"
+            "nombre": "Gadgets",
+            "id": "gadgets"
         },
         "precio": 28900
     }
