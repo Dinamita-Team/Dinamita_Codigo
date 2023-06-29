@@ -9,26 +9,34 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+
 }
 
 body{
+    width: 98vw;
+    height: 98vh;
     font-family: var(--font-mono);
     background-color: rgba(230, 14, 26, 1);
     background-image: url("../img/DINAMITA.png");
-    background-size: 70em 90em;
-    background-position: center center;
+    /* background-size: 70em 90em; */
+    /* background-position: center center; */
+    background-position: left center;
     background-repeat: no-repeat;
 }
 
 section{
     display:flex;
-    flex-wrap: wrap;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 1em;
+    width: 60vw;
+    position: relative;
+    left: 30rem;
+    top: 8rem;
 }
+
+
 
 section h1{
     font-size: 3em;
@@ -56,12 +64,14 @@ section form{
 
 section form label{
     width: 100%;
+    font-size: medium;
     padding: 0.2em;
     margin-bottom: 0.5em;
 }
 
-section form input{
+ section form input{
     width: 100%;
+    font-size: medium;
     margin-bottom: 1em;
     padding: 0.8em;
     border-radius: 9px;
@@ -69,7 +79,7 @@ section form input{
     outline-color: #003DFF;
     background-color: #eee;
 }
-
+/*
 section form input[type='submit']{
     margin-top: 1.5em;
     background-color: goldenrod;
@@ -80,10 +90,13 @@ section form input[type='submit']{
 
 section form input[type='submit']:active{
     transform: scale(0.97);
-}
+} */
 
 section p{
     margin-top: 1.5em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
 
 }
 
@@ -106,4 +119,33 @@ section button{
     border-radius: 9px;
     margin-top: 1.5em;
     font-size: 1em;
+}
+
+section form input[type='submit']{
+    width: 100%;
+    padding-block: 20px;
+    background: linear-gradient(to right, #E60E1A, #F42F2F, #FBC400 );
+    margin-top: 2rem;
+    background-size: 180% 180%;
+    background-position: center;
+    color: #fff;
+    font-size: medium;
+	animation: gradient-animation 3s ease infinite;
+}
+
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+section form input[type='submit']:active{
+    transform: scale(0.97);
 }
