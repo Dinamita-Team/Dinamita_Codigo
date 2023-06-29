@@ -94,9 +94,10 @@ body{
 }
 
 .contact-info{
-    background: #000;
+    background:  hsl(252, 30%, 95%);
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
+    color: black;
 }
 
 .contact-info h4,
