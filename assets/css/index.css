@@ -128,7 +128,7 @@ nav .logo-image img{
 nav .logo-name .logo_name{
     font-size: 22px;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--color-primary);
     margin-left: 14px;
     transition: var(--tran-05);
 }
