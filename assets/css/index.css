@@ -174,7 +174,7 @@ nav.close .logo_name{
   }
 
   .carrito{
-    color: white;
+    color: var(--color-black);
   }
   
   .btn:hover{
