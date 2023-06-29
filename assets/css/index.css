@@ -480,6 +480,14 @@ nav.close ~ .dashboard .top{
     border: 3px solid var(--color-danger);
 }
 
+/* slider */
+.carousel{
+    top:10vh;
+}
+#carouselExampleAutoplaying img{
+    height: 30rem;
+}
+
 /* productos */
 
 
