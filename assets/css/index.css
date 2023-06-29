@@ -14,7 +14,7 @@
 
 :root{
     /* ===== Colors ===== */
-    --primary-color: #0E4BF1;
+    --primary-color: #fa3d57;
     --panel-color: #FFF;
     --text-color: #000;
     --black-light-color: #707070;
@@ -84,7 +84,7 @@ body.dark{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #0b3cc1;
+    background: #d63b3b9f;
 }
 
 body.dark::-webkit-scrollbar-thumb:hover,
@@ -159,6 +159,7 @@ nav.close .logo_name{
     display: block;
     width: 100%;
   }
+
   
   .btn{
     display: inline-block;
@@ -502,7 +503,9 @@ nav.close ~ .dashboard .top{
 .product img{
     width: 20%;
     height: 20%;
-}
+} 
+
+
 
 .details{
     display: flex;
