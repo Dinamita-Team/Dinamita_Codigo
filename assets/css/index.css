@@ -174,7 +174,7 @@ nav.close .logo_name{
   }
 
   .carrito{
-    color: white;
+    color: var(--color-black);
   }
   
   .btn:hover{
@@ -478,6 +478,14 @@ nav.close ~ .dashboard .top{
     height: 2.5rem;
     align-self: flex-start; /*start*/
     border: 3px solid var(--color-danger);
+}
+
+/* slider */
+.carousel{
+    top:10vh;
+}
+#carouselExampleAutoplaying img{
+    height: 30rem;
 }
 
 /* productos */
