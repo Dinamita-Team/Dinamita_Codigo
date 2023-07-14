@@ -1,7 +1,7 @@
-package com.dinamita.proyectoDinamita.Repository;
+package com.dinamita.dinamitademo.Repository;
 
 
-import com.dinamita.proyectoDinamita.Entity.products;
+import com.dinamita.dinamitademo.Entity.products;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

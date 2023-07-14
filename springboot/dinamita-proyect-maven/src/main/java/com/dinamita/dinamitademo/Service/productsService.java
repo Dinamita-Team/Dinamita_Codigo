@@ -1,11 +1,11 @@
-package com.dinamita.proyectoDinamita.Service;
+package com.dinamita.dinamitademo.Service;
 
-import com.dinamita.proyectoDinamita.Entity.products;
+import com.dinamita.dinamitademo.Entity.products;
 
 
 import java.util.List;
 
-public interface ProductsService {
+public interface productsService {
 
     public List<products> Consultarproducts();
 

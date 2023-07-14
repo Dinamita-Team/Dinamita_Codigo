@@ -1,4 +1,4 @@
-package com.dinamita.proyectoDinamita.Entity;
+package com.dinamita.dinamitademo.Entity;
 
 
 import jakarta.persistence.*;

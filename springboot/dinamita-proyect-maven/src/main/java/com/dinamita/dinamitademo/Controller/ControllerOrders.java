@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("orders")
-public class controllerOrders {
+public class ControllerOrders {
 
     @Autowired
     private classServiceOrders csu;

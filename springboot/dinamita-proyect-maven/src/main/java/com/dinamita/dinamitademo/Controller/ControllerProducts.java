@@ -1,7 +1,7 @@
-package com.dinamita.proyectoDinamita.Controller;
+package com.dinamita.dinamitademo.Controller;
 
-import com.dinamita.proyectoDinamita.Entity.products;
-import com.dinamita.proyectoDinamita.Service.ClaseServicioProducts;
+import com.dinamita.dinamitademo.Entity.products;
+import com.dinamita.dinamitademo.Service.classServiceProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,10 +12,10 @@ import java.util.List;
 @RestController
 @RequestMapping("Products")
 
-public class ControladorProducts {
+public class ControllerProducts {
 
     @Autowired
-    private ClaseServicioProducts csp;
+    private classServiceProducts csp;
 
     /*La anotación GetMapping nos ayuda mapear una solicitud GET*/
     @GetMapping

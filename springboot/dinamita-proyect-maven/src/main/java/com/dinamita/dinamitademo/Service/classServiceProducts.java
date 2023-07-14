@@ -1,14 +1,14 @@
-package com.dinamita.proyectoDinamita.Service;
+package com.dinamita.dinamitademo.Service;
 
-import com.dinamita.proyectoDinamita.Entity.products;
-import com.dinamita.proyectoDinamita.Repository.ProductsRepo;
+import com.dinamita.dinamitademo.Entity.products;
+import com.dinamita.dinamitademo.Repository.ProductsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class ClaseServicioProducts implements ProductsService {
+public class classServiceProducts implements productsService {
 
     @Autowired
     private ProductsRepo repo;
