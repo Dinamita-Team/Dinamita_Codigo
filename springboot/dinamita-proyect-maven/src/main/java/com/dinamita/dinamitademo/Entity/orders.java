@@ -19,10 +19,10 @@ public class orders {
 
     @Column(name = "user_id")
     private int user_id;
-
+/*
     @Column(name = "status")
     private Enum status;
-
+*/
     @Column(name = "grand_total")
     private double grand_total;
 
@@ -31,13 +31,14 @@ public class orders {
 
     @Column(name = "is_paid")
     private int is_paid;
-
+/*
     @Column(name = "payment_method")
     private Enum payment_method;
-
+*/
     @Column(name = "shipping_fullname")
     private String shipping_fullname;
 
+    /*
     @Column(name = "shipping_address")
     private String shipping_address;
 
@@ -76,7 +77,7 @@ public class orders {
 
     @Column(name = "updated_at")
     private Timestamp updated_at;
-
+*/
 
     public int getId() {
         return id;
@@ -101,7 +102,7 @@ public class orders {
     public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
-
+/*
     public Enum getStatus() {
         return status;
     }
@@ -109,7 +110,7 @@ public class orders {
     public void setStatus(Enum status) {
         this.status = status;
     }
-
+*/
     public double getGrand_total() {
         return grand_total;
     }
@@ -133,7 +134,7 @@ public class orders {
     public void setIs_paid(int is_paid) {
         this.is_paid = is_paid;
     }
-
+/*
     public Enum getPayment_method() {
         return payment_method;
     }
@@ -141,7 +142,7 @@ public class orders {
     public void setPayment_method(Enum payment_method) {
         this.payment_method = payment_method;
     }
-
+*/
     public String getShipping_fullname() {
         return shipping_fullname;
     }
@@ -150,6 +151,7 @@ public class orders {
         this.shipping_fullname = shipping_fullname;
     }
 
+    /*
     public String getShipping_address() {
         return shipping_address;
     }
@@ -253,4 +255,5 @@ public class orders {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+    */
 }
