@@ -25,8 +25,6 @@ public class products {
     @Column(name = "cover_img")
     private String cover_img;
 
-    @Column(name= "shop_id")
-    private int shop_id;
 
 
     public int getId() {
@@ -69,11 +67,4 @@ public class products {
         this.cover_img = cover_img;
     }
 
-    public int getShop_id() {
-        return shop_id;
-    }
-
-    public void setShop_id(int shop_id) {
-        this.shop_id = shop_id;
-    }
 }

@@ -20,16 +20,16 @@ public class classServiceUsers implements usersService{
     @Override
     public users CrearUsuarios(users users) {
         users.setName(users.getName());
-        return (users) this.repo.save(users);
+        return this.repo.save(users);
     }
     // com.dina..... es para solucionar un error
     @Override
     public users ModificarUsuarios(users users) {
-        return (users) this.repo.save(users);
+        return this.repo.save(users);
     }
 
     public users BuscarUsuarios(int id) {
-        return (users) this.repo.findById(id).get();
+        return this.repo.findById(id).get();
     }
 
     @Override

@@ -1,7 +1,7 @@
 package com.dinamita.dinamitademo.Service;
 
 import com.dinamita.dinamitademo.Entity.products;
-import com.dinamita.dinamitademo.Repository.ProductsRepo;
+import com.dinamita.dinamitademo.Repository.productsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public class classServiceProducts implements productsService {
 
     @Autowired
-    private ProductsRepo repo;
+    private productsRepo repo;
 
     @Override
     public List<products> Consultarproducts(){
