@@ -8,9 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.right{
-    display: none;
-}
+
 
 :root{
     /* ===== Colors ===== */
@@ -141,25 +139,21 @@ nav.close .logo_name{
 
 
 
-  .container{
+   .container-search{
     display: flex;
+    justify-content: center;
     gap: 2rem;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
-  }
-  
-  .profile-photo{
-    width: 2.7rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  
-  img{
-    display: block;
-    width: 100%;
-  }
+    margin-left: 1.2rem;
+    justify-content: space-around;
+  } 
 
+  .uil{
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+  }
   
   .btn{
     display: inline-block;
@@ -168,7 +162,6 @@ nav.close .logo_name{
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: all 300ms ease;
-    font-size: 0.9rem;
     background: var(--color-primary);
     color: white;
   }
@@ -200,27 +193,25 @@ nav.close .logo_name{
     width: 79%;
     background: var(--color-white);
     padding: 0.7rem 0;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     z-index: 10;
   }
   
-  div .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
   
   div .search-bar{
     background: var(--color-light);
     border-radius: var(--border-radius);
     padding: var(--search-padding);
+    display: flex;
+    align-items: center;
   }
   
   div .search-bar input[type="search"]{
     background: transparent;
-    width: 30vw;
-    margin-left:1rem ;
+    width: 40vw;
+    margin-left:2rem ;
     font-size: 0.9rem;
     color: var(--color-dark);
     border: none;
@@ -348,7 +339,7 @@ nav.close ~ .dashboard{
     width: calc(100% - 73px);
 }
 .dashboard .top{
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 250px;
     display: flex;
@@ -362,7 +353,7 @@ nav.close ~ .dashboard{
 }
 nav.close ~ .dashboard .top{
     left: 73px;
-    width: calc(100% - 73px);
+    width: calc(100% - 7px);
 }
 .dashboard .top .sidebar-toggle{
     font-size: 26px;
@@ -377,202 +368,166 @@ nav.close ~ .dashboard .top{
 
 /* STORIES */
 
-/* flechas */
-/* .arrows{
+
+
+.stories-container {
+    max-width: 80vw;
+    margin: 24px auto;
     position: relative;
-    top: 5rem;
-    color: white;
-    font-size: 1.5rem;
-    z-index: 10;
-}
-
-.arrow-left{
+    /* top: 4rem; */
+  }
+  
+  .stories-container .previous-btn,
+  .stories-container .next-btn,
+  .stories-full-view .previous-btn,
+  .stories-full-view .next-btn {
+    width: 30px;
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #444;
+    color: #fff;
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    background: var(--color-danger);
-        
-}
-
-.arrow-right{
-    position: absolute;
-    left: -2rem;
+    padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    background: var(--color-danger);
-    
-} */
-
-.middle .stories{
-    display: flex;
-    justify-content: space-between;
-    height: 12rem;
-    /* cambiar aqui */
-    position: relative;  
-    top: 4rem;
-    
-    gap: 0.5rem;
-}
-
-.middle .stories .story{
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-size: 0.75rem;
-    width: 100%;
-
-    position: relative;
+    cursor: pointer;
+  }
+  
+  .stories-container .previous-btn,
+  .stories-container .next-btn {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+  
+  .stories-container .previous-btn.active,
+  .stories-container .next-btn.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .stories-container .previous-btn,
+  .stories-full-view .previous-btn {
+    left: 8px;
+  }
+  
+  .stories-container .next-btn,
+  .stories-full-view .next-btn {
+    right: 8px;
+  }
+  
+  .stories-container .story {
+    height: 30vh;
+    width: 12vw;
+    flex-shrink: 0;
+    border-radius: 16px;
     overflow: hidden;
-}
-
-.middle .stories .story::before{
-    content: "";
-    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .stories-container .story img {
     width: 100%;
-    height: 5rem;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .stories-container .stories {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .stories-container .content {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  
+  .stories-container .content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .stories-container .author {
     position: absolute;
     bottom: 0;
-}
-
-.middle .stories .story .name{
-    z-index: 2;
-}
-
-.middle .stories .story:nth-child(1){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .stories .story:nth-child(2){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .stories .story:nth-child(3){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .stories .story:nth-child(4){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .stories .story:nth-child(5){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .story .profile-photo{
-    width: 2.5rem;
-    height: 2.5rem;
-    align-self: flex-start; /*start*/
-    border: 3px solid var(--color-danger);
-}
+    left: 0;
+    right: 0;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(transparent, #222 130%);
+  }
+  
+  .stories-full-view {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    place-items: center;
+  }
+  
+  .stories-full-view.active {
+    display: grid;
+  }
+  
+  .stories-full-view .close-btn {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 30px;
+    background: #444;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  .stories-full-view .content {
+    height: 90vh;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+  }
+  
+  .stories-full-view .story {
+    height: 100%;
+    text-align: center;
+  }
+  
+  .stories-full-view .story img {
+    height: 100%;
+    aspect-ratio: 10/16;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  
+  .stories-full-view .author {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 4px 32px;
+    border-radius: 8px;
+  }
 
 /* slider */
 .carousel{
-    top:10vh;
+    top:0;
 }
 #carouselExampleAutoplaying img{
-    height: 30rem;
+    height: 21rem;
 }
 
-/* productos */
-
-
-.products{
-    position: relative;
-    top: 7rem;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
-}
-
-.product{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: var(--card-padding);
-    background: #FFFFFF;
-    box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.13);
-    border-radius: 10px;
-}
-
-.product img{
-    width: 20%;
-    height: 20%;
-} 
-
-
-
-.details{
-    display: flex;
-}
-
-.description{
-    line-height: 1.5rem;
-    padding: 0 2rem;
-}
-
-.price{
-    color: var(--color-primary);
-    font-size: 1.4rem;
-
-}
-
-.buttoms{
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.7rem;
-}
-
-.buttoms .favorites{
-    background: none;
-    border: 3px solid var(--color-primary);
-    color: var(--color-primary);
-    padding: 0 1.5rem;
-    font-weight: 500;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: all 300ms ease;
-    font-size: 1.5rem;
-}
-
-
-
-/* CATEGORIES STARTS */
-.right{
-    width: 50%;
-}
-
-
- .sidebar {
-    background: #FFFFFF;
-    position: relative;
-    border-radius: var(--border-radius);
-    box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.13);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    width: 100%;
-    padding: var(--card-padding);
-    top: 4rem;
-
-  }
-
- 
-
-
-
- /* terminado */
 
 .sidebar-category {
     margin-bottom: 15px;
@@ -712,4 +667,5 @@ nav.close ~ .dashboard .top{
   }
   
 
+  
   
