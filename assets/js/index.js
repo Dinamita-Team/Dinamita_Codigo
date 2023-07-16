@@ -48,8 +48,12 @@ modeToggle.addEventListener("click", () =>{
     body.classList.toggle("dark");
     if(body.classList.contains("dark")){
         localStorage.setItem("mode", "dark");
+        document.getElementById("titulo-principal").classList.add("titulo-principal-white");
+
     }else{
         localStorage.setItem("mode", "light");
+        document.getElementById("titulo-principal").classList.remove("titulo-principal-white");
+
     }
 });
 
@@ -61,10 +65,4 @@ sidebarToggle.addEventListener("click", () => {
         localStorage.setItem("status", "open");
     }
 })
-
-
-
-
-// categories
-
 

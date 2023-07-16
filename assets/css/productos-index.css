@@ -184,14 +184,26 @@ a {
 
 .main-productos {
     background-color: var(--clr-main);
-    margin-block: 6rem;
+    margin-block: 2rem;
     border-radius: 2rem;
-    padding: 6rem;
+    padding: 2rem;
 }
 
 .titulo-principal {
     color: var(--clr-black);
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+.titulo-principal {
+    /* Estilos para el título en modo claro (por ejemplo, color negro) */
+    color: black;
+}
+
+/* Estilos adicionales del título en modo oscuro */
+.titulo-principal-white {
+    /* Color blanco para el título en modo oscuro */
+    color: white;
 }
 
 .contenedor-productos {
