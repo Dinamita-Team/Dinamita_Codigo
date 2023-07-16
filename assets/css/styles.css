@@ -118,8 +118,18 @@ section form input[type='submit']{
     color: #fff;
     font-size: medium;
 	animation: gradient-animation 3s ease infinite;
+    cursor: pointer;
 }
 
+/*Sign up*/
+.sectionSignup{
+    position: relative;
+    top: 0;
+}
+
+.parrafo{
+    margin: 1rem;
+}
 
 @keyframes gradient-animation {
 	0% {
@@ -151,6 +161,11 @@ section form input[type='submit']:active{
       left: 0;
 
 
+    }
+    .sectionSignup{
+        height: 60vh;
+        position: relative;
+        top: 5.3rem;
     }
 
     section p{
