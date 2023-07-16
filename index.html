@@ -85,7 +85,7 @@
     <section class="dashboard">
         <div class="barralateral top">
             <i class="uil uil-bars sidebar-toggle"></i>
-            <div class="container">
+            <div class="container-search">
                 <div class="search-bar">
                   <i class="uil uil-search"></i>
                   <input type="search" name="" id="" placeholder="Busca el producto">
@@ -109,9 +109,9 @@
                     <i class="uil uil-envelope-alt btn"></i>
                   </div>
         
-                  <div class="profile-photo">
+                 <div class="profile-photo">
                     <img src="./assets/img/Images/Sarid.jfif" alt="">
-                  </div>
+                  </div> 
                 </div>
               </div>
         </div>
@@ -119,15 +119,114 @@
         <main>
             <div class="container">
 
-                <!-- MIDDLE -->
-                <div class="middle">
                     <!-------- STORIES ---------->
-                    <div class="stories">
+                    <div class="stories-container">
+                        <div class="content">
+                          <div class="previous-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="w-6 h-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 19.5L8.25 12l7.5-7.5"
+                              />
+                            </svg>
+                          </div>
+                  
+                          <div class="stories"></div>
+                  
+                          <div class="next-btn active">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="w-6 h-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <div class="stories-full-view">
+                        <div class="close-btn">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M6 18L18 6M6 6l12 12"
+                            />
+                          </svg>
+                        </div>
+                  
+                        <div class="content">
+                          <div class="previous-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="w-6 h-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 19.5L8.25 12l7.5-7.5"
+                              />
+                            </svg>
+                          </div>
+                  
+                          <div class="story">
+                            <img src="images/3.jpg" alt="" />
+                            <div class="author">Author</div>
+                          </div>
+                  
+                          <div class="next-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="w-6 h-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
 
-                        <!-- <div class="arrows">
-                            <div class="arrow-left"><i class="uil uil-arrow-left"></i></div>
-                        </div> -->
-                        
+
+
+
+
+
+                    <!-- <div class="stories">
+
                         <div class="story">
                             <div class="profile-photo">
                                 <img src="assets/img/Sarid.jfif" alt="">
@@ -163,11 +262,7 @@
                             <p class="name">Hector Beltran</p>
                         </div>
                         
-                        <!-- <div class="arrows">
-                            <div class="arrow-right"><i class="uil uil-arrow-right"></i></div>
-                        </div>
-                         -->
-                    </div>
+                    </div> -->
 
                     <!-- END STORIES -->
 
@@ -195,27 +290,7 @@
                         </button>
                     </div>
 
-                    <!-- <div class="container">
-                        <div class="products">
-                            <div class="product">
-                                <div class="details">
-                                    <img src="assets/img/images/sirblue.png" alt="">
-                                    <div class="description">
-                                        <h3>SOFA</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi fugit maxime adipisci pariatur atque ipsam quae voluptatibus repellendus, harum quam possimus corporis consectetur nulla beatae ullam ipsa a quibusdam officiis!</p>
-                                        <span class="price">$10.000</span>
-                                    </div>
 
-                                </div>
-
-                                <div class="buttoms">
-                                    <div class="favorites"><i class="uil uil-heart"></i></div>
-                                    <div class="btn">Add to cart</div>
-                                    <div class="btn">Buy Now</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
 
                     <!-- lista de productos en general -->
                     <div>
@@ -238,372 +313,14 @@
 
                 </div>
 
-                <!-- right -->
-                <div class="right">
-                    <div class="sidebar  has-scrollbar" data-mobile-menu>
-                    <!-- CATEGORYS START -->
-                        <div class="sidebar-category">
 
-                            <div class="sidebar-top">
-                            <h2 class="sidebar-title">Category</h2>
-                
-                            </div>
-                
-                            <ul class="sidebar-menu-category-list">
-                
-                            <li class="sidebar-menu-category">
-                
-                                <button class="sidebar-accordion-menu" data-accordion-btn>
-                
-                                <div class="menu-title-flex">
-                                    <img src="assets/img/images/icons/dress.svg" alt="clothes" width="20" height="20"
-                                    class="menu-title-img">
-                
-                                    <p class="menu-title">Clothes</p>
-                                </div>
-                
-                                <div>
-                                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                </div>
-                
-                                </button>
-                
-                                <ul class="sidebar-submenu-category-list" data-accordion>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Shirt</p>
-                                    <data value="300" class="stock" title="Available Stock">300</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">shorts & jeans</p>
-                                    <data value="60" class="stock" title="Available Stock">60</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">jacket</p>
-                                    <data value="50" class="stock" title="Available Stock">50</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">dress & frock</p>
-                                    <data value="87" class="stock" title="Available Stock">87</data>
-                                    </a>
-                                </li>
-                
-                                </ul>
-                
-                            </li>
-                
-                            <li class="sidebar-menu-category">
-                
-                                <button class="sidebar-accordion-menu" data-accordion-btn>
-                
-                                <div class="menu-title-flex">
-                                    <img src="assets/img/images/icons/shoes.svg" alt="footwear" class="menu-title-img" width="20"
-                                    height="20">
-                
-                                    <p class="menu-title">Footwear</p>
-                                </div>
-                
-                                <div>
-                                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                </div>
-                
-                                </button>
-                
-                                <ul class="sidebar-submenu-category-list" data-accordion>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Sports</p>
-                                    <data value="45" class="stock" title="Available Stock">45</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Formal</p>
-                                    <data value="75" class="stock" title="Available Stock">75</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Casual</p>
-                                    <data value="35" class="stock" title="Available Stock">35</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Safety Shoes</p>
-                                    <data value="26" class="stock" title="Available Stock">26</data>
-                                    </a>
-                                </li>
-                
-                                </ul>
-                
-                            </li>
-                
-                            <li class="sidebar-menu-category">
-                
-                                <button class="sidebar-accordion-menu" data-accordion-btn>
-                
-                                <div class="menu-title-flex">
-                                    <img src="assets/img/images/icons/jewelry.svg" alt="clothes" class="menu-title-img" width="20"
-                                    height="20">
-                
-                                    <p class="menu-title">Jewelry</p>
-                                </div>
-                
-                                <div>
-                                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                </div>
-                
-                                </button>
-                
-                                <ul class="sidebar-submenu-category-list" data-accordion>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Earrings</p>
-                                    <data value="46" class="stock" title="Available Stock">46</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Couple Rings</p>
-                                    <data value="73" class="stock" title="Available Stock">73</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Necklace</p>
-                                    <data value="61" class="stock" title="Available Stock">61</data>
-                                    </a>
-                                </li>
-                
-                                </ul>
-                
-                            </li>
-                
-                            <li class="sidebar-menu-category">
-                
-                                <button class="sidebar-accordion-menu" data-accordion-btn>
-                
-                                <div class="menu-title-flex">
-                                    <img src="assets/img/images/icons/perfume.svg" alt="perfume" class="menu-title-img" width="20"
-                                    height="20">
-                
-                                    <p class="menu-title">Perfume</p>
-                                </div>
-                
-                                <div>
-                                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                </div>
-                
-                                </button>
-                
-                                <ul class="sidebar-submenu-category-list" data-accordion>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Clothes Perfume</p>
-                                    <data value="12" class="stock" title="Available Stock">12 pcs</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Deodorant</p>
-                                    <data value="60" class="stock" title="Available Stock">60 pcs</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">jacket</p>
-                                    <data value="50" class="stock" title="Available Stock">50 pcs</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">dress & frock</p>
-                                    <data value="87" class="stock" title="Available Stock">87 pcs</data>
-                                    </a>
-                                </li>
-                
-                                </ul>
-                
-                            </li>
-                
-                            <li class="sidebar-menu-category">
-                
-                                <button class="sidebar-accordion-menu" data-accordion-btn>
-                
-                                <div class="menu-title-flex">
-                                    <img src="assets/img/images/icons/cosmetics.svg" alt="cosmetics" class="menu-title-img" width="20"
-                                    height="20">
-                
-                                    <p class="menu-title">Cosmetics</p>
-                                </div>
-                
-                                <div>
-                                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                </div>
-                
-                                </button>
-                
-                                <ul class="sidebar-submenu-category-list" data-accordion>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Shampoo</p>
-                                    <data value="68" class="stock" title="Available Stock">68</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Sunscreen</p>
-                                    <data value="46" class="stock" title="Available Stock">46</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Body Wash</p>
-                                    <data value="79" class="stock" title="Available Stock">79</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Makeup Kit</p>
-                                    <data value="23" class="stock" title="Available Stock">23</data>
-                                    </a>
-                                </li>
-                
-                                </ul>
-                
-                            </li>
-                
-                            <li class="sidebar-menu-category">
-                
-                                <button class="sidebar-accordion-menu" data-accordion-btn>
-                
-                                <div class="menu-title-flex">
-                                    <img src="assets/img/images/icons/glasses.svg" alt="glasses" class="menu-title-img" width="20"
-                                    height="20">
-                
-                                    <p class="menu-title">Glasses</p>
-                                </div>
-                
-                                <div>
-                                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                </div>
-                
-                                </button>
-                
-                                <ul class="sidebar-submenu-category-list" data-accordion>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Sunglasses</p>
-                                    <data value="50" class="stock" title="Available Stock">50</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Lenses</p>
-                                    <data value="48" class="stock" title="Available Stock">48</data>
-                                    </a>
-                                </li>
-                
-                                </ul>
-                
-                            </li>
-                
-                            <li class="sidebar-menu-category">
-                
-                                <button class="sidebar-accordion-menu" data-accordion-btn>
-                
-                                <div class="menu-title-flex">
-                                    <img src="assets/img/images/icons/bag.svg" alt="bags" class="menu-title-img" width="20" height="20">
-                
-                                    <p class="menu-title">Bags</p>
-                                </div>
-                
-                                <div>
-                                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                </div>
-                
-                                </button>
-                
-                                <ul class="sidebar-submenu-category-list" data-accordion>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Shopping Bag</p>
-                                    <data value="62" class="stock" title="Available Stock">62</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Gym Backpack</p>
-                                    <data value="35" class="stock" title="Available Stock">35</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Purse</p>
-                                    <data value="80" class="stock" title="Available Stock">80</data>
-                                    </a>
-                                </li>
-                
-                                <li class="sidebar-submenu-category">
-                                    <a href="#" class="sidebar-submenu-title">
-                                    <p class="product-name">Wallet</p>
-                                    <data value="75" class="stock" title="Available Stock">75</data>
-                                    </a>
-                                </li>
-                
-                                </ul>
-                
-                            </li>
-                
-                            </ul>
-                
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </main>
 
     </section>
 
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/stories.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
