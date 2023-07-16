@@ -148,19 +148,12 @@ nav.close .logo_name{
     margin-left: 1.2rem;
     justify-content: space-around;
   } 
-/*   
-  .profile-photo{
-    width: 2.7rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    overflow: hidden;
-  } */
-  
-  /* img{
-    display: block;
-    width: 100%;
-  } */
 
+  .uil{
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+  }
   
   .btn{
     display: inline-block;
@@ -169,7 +162,6 @@ nav.close .logo_name{
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: all 300ms ease;
-    font-size: 0.9rem;
     background: var(--color-primary);
     color: white;
   }
@@ -361,7 +353,7 @@ nav.close ~ .dashboard{
 }
 nav.close ~ .dashboard .top{
     left: 73px;
-    width: calc(100% - 73px);
+    width: calc(100% - 7px);
 }
 .dashboard .top .sidebar-toggle{
     font-size: 26px;
@@ -376,75 +368,6 @@ nav.close ~ .dashboard .top{
 
 /* STORIES */
 
-
-/* .middle .stories{
-    display: flex;
-    justify-content: space-between;
-    height: 12rem;
-    // cambiar aqui
-    position: relative;  
-    top: 4rem;
-    
-    gap: 0.5rem;
-}
-
-.middle .stories .story{
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-size: 0.75rem;
-    width: 100%;
-
-    position: relative;
-    overflow: hidden;
-}
-
-.middle .stories .story::before{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 5rem;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
-    position: absolute;
-    bottom: 0;
-}
-
-.middle .stories .story .name{
-    z-index: 2;
-}
-
-.middle .stories .story:nth-child(1){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .stories .story:nth-child(2){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .stories .story:nth-child(3){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .stories .story:nth-child(4){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .stories .story:nth-child(5){
-    background: url("../img/Images/profile.jpg") no-repeat center center/cover;
-}
-
-.middle .story .profile-photo{
-    width: 2.5rem;
-    height: 2.5rem;
-    align-self: flex-start; 
-    border: 3px solid var(--color-danger);
-} */
-
-/*stories*/
 
 
 .stories-container {
@@ -599,21 +522,12 @@ nav.close ~ .dashboard .top{
 
 /* slider */
 .carousel{
-    top:10vh;
+    top:0;
 }
 #carouselExampleAutoplaying img{
-    height: 30rem;
+    height: 21rem;
 }
 
-
-/* CATEGORIES STARTS */
-
-
- 
-
-
-
- /* terminado */
 
 .sidebar-category {
     margin-bottom: 15px;
