@@ -190,21 +190,10 @@ a {
 }
 
 .titulo-principal {
-    color: var(--clr-black);
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.titulo-principal {
-    /* Estilos para el título en modo claro (por ejemplo, color negro) */
-    color: black;
-}
-
-/* Estilos adicionales del título en modo oscuro */
-.titulo-principal-white {
-    /* Color blanco para el título en modo oscuro */
-    color: white;
-}
 
 .contenedor-productos {
     display: grid;
