@@ -62,9 +62,3 @@ sidebarToggle.addEventListener("click", () => {
     }
 })
 
-
-
-
-// categories
-
-
