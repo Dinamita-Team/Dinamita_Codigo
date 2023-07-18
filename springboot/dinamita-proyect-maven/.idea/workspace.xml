@@ -4,88 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5b40213-60c2-4d9e-92e7-85b4b90e645a" name="Changes" comment="orders funcionando">
-      <change afterPath="$PROJECT_DIR$/../../db/dinamita.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../assets/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../assets/css/productos-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../assets/css/productos-index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../assets/js/crud.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../dashboard/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../db/dinamita-database original - 4 tablas.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../db/dinamita-database-1-sarid-varias-tablas.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../db/dinamita-modelo.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lista-productos-categorias.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../lista-productos-categorias.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../producto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Controller/ControladorOrder_items.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Controller/ControllerOrders.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Controller/ControllerProducts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Controller/ControllerUsers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/DinamitaDemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Entity/order_items.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Entity/orders.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Entity/products.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Entity/users.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Repository/order_itemsRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Repository/ordersRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Repository/productsRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Repository/usersRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Service/ServiceOrder_items.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Service/claseServicioOrder_items.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Service/classServiceOrders.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Service/classServiceProducts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Service/classServiceUsers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Service/ordersService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Service/productsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinamita/dinamitademo/Service/usersService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dinamita/dinamitademo/DinamitaDemoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinamita/dinamitademo/Controller/controllerUsers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinamita/dinamitademo/DinamitaDemoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinamita/dinamitademo/Entity/users.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinamita/dinamitademo/Repository/usersRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinamita/dinamitademo/Service/classServiceUsers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinamita/dinamitademo/Service/usersService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Controller/ControladorPermissions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Controller/ControladorProducts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Controller/ControladorRoles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Entity/permissions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Entity/products.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Entity/roles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/ProyectoDinamitaApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Repository/PermissionsRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Repository/ProductsRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Repository/RolRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Service/ClaseServicioPermissions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Service/ClaseServicioProducts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Service/ClaseServicioRol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Service/PermissionsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Service/ProductsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/java/com/dinamita/proyectoDinamita/Service/RolService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../otros/proyectoDinamita-permisos-productos-roles/src/test/java/com/dinamita/proyectoDinamita/ProyectoDinamitaApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="b5b40213-60c2-4d9e-92e7-85b4b90e645a" name="Changes" comment="orders funcionando" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +44,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging review",
+    "git-widget-placeholder": "review",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/osfed/OneDrive/Generation, Full Stack/Programación/Ejercicios/Springboot/dinamita-demo-users/dinamita-demo"
   }
