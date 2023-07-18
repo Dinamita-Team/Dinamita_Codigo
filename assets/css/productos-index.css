@@ -11,8 +11,6 @@
     --clr-orange: #FF8000;
 }
 
-/* ... (código anterior) ... */
-
 /* Modo Claro */
 body:not(.dark) {
     --clr-main: #ffffff;
@@ -40,15 +38,17 @@ body:not(.dark) {
     color: var(--clr-white);
     background-color: var(--clr-black);
   }
-  
-  /* ... (código posterior) ... */
-  
+
+
+/* ... (código anterior) ... */
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
@@ -64,6 +64,16 @@ a {
     text-decoration: none;
 }
 
+
+body.dark .boton-menu {
+    color: var(--clr-white);
+}
+
+
+#menu-items{
+    left: 0;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -72,35 +82,20 @@ a {
 }
 
 .aside-Productos {
-    padding: 1rem 2rem 0rem 2rem;
-    position: absolute;
-    z-index: 6;
-    background-color: var(--clr-main);
-    color: var(--clr-black);
-    position: fixed;
-    top: 0;
-    height: 10em;
-    width: 100vw;
+    color: #e2e2e2;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: var(--clr-main);
-}
+    margin-top: 2rem;
+} 
 
-.logo {
-    font-weight: 500;
-    font-size: 2vw;
-    color: var(--clr-red);
-}
 
-.logo h1 a{
-    color: var(--clr-red);
-}
 
 .menu {
     display: flex;
     flex-direction: row;
     gap: .5rem;
+    align-items: center;
 }
 
 .boton-menu {
@@ -121,9 +116,8 @@ a {
 .boton-menu.active {
     background-color: var(--clr-red);
     color: var(--clr-main);
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    position: relative;
+    border-radius: 1rem;
+
 }
 
 .boton-menu.active::before {
@@ -157,6 +151,14 @@ a {
     background-color: var(--clr-main);
 }
 
+
+
+.uil{
+    display: flex;
+    align-items: center;
+}
+
+
 .numerito {
     background-color: var(--clr-red);
     color: var(--clr-main);
@@ -174,13 +176,13 @@ a {
     font-size: .85rem;
 }
 
-.main-lista-productos{
+/* .main-lista-productos{
     margin-top: 10em;
     padding: 2em;
     background-color: var(--clr-gray);
     border-radius: 2em;
     width: 100%;
-}
+} */
 
 .main-productos {
     background-color: var(--clr-main);
