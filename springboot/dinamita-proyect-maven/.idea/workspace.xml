@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5b40213-60c2-4d9e-92e7-85b4b90e645a" name="Changes" comment="orders funcionando" />
+    <list default="true" id="b5b40213-60c2-4d9e-92e7-85b4b90e645a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +44,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "review",
+    "git-widget-placeholder": "felipe",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/osfed/OneDrive/Generation, Full Stack/Programación/Ejercicios/Springboot/dinamita-demo-users/dinamita-demo"
   }
@@ -65,11 +65,19 @@
       <option name="project" value="LOCAL" />
       <updated>1689376159885</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="menos columnas desde entity">
+      <created>1689736463967</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689736463967</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="orders funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="orders funcionando" />
+    <MESSAGE value="menos columnas desde entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="menos columnas desde entity" />
   </component>
 </project>
