@@ -1,3 +1,5 @@
+import KEYS from "../../stripe/Keys.js"
+
 let productosEnCarrito = localStorage.getItem("productos-en-carrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
@@ -130,13 +132,30 @@ function actualizarTotal() {
 
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
+    if (productosEnCarrito.length > 0) {
+        let items = [];
+        for(let i=0 ;i<productosEnCarrito.length;i++){
+            items.push({price: productosEnCarrito[i].id_precio, quantity: productosEnCarrito[i].cantidad})
+        }
+        Stripe(KEYS.public).redirectToCheckout({
+            lineItems: items,
+            mode: "payment",
+            successUrl:"http://127.0.0.1:5501/success.html",
+            cancelUrl:"http://127.0.0.1:5501/cancel.html",
+        })
+        .then(res => {
+            if (res.error){
+                $arepas.insertAdjacentElement("afterend", res.error.message)
+            }
+        })
+    }
 
     productosEnCarrito.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
     
-    contenedorCarritoVacio.classList.add("disabled");
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.remove("disabled");
+    // contenedorCarritoVacio.classList.add("disabled");
+    // contenedorCarritoProductos.classList.add("disabled");
+    // contenedorCarritoAcciones.classList.add("disabled");
+    // contenedorCarritoComprado.classList.remove("disabled");
 
 }
