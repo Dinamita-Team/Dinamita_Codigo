@@ -107,6 +107,7 @@ nav.close{
 nav .logo-name{
     display: flex;
     align-items: center;
+    padding-top: 10px;
 }
 
 nav .logo_name_color{
@@ -130,6 +131,13 @@ nav .logo-name .logo_name{
     margin-left: 14px;
     transition: var(--tran-05);
 }
+
+nav .logo-name .logo-name-banner{
+  width: 8em;
+  margin-inline: .9em;
+  margin-top: 0.2em;
+}
+
 nav.close .logo_name{
     opacity: 0;
     pointer-events: none;
@@ -170,7 +178,7 @@ nav.close .logo_name{
   }
 
   .carrito{
-    color: var(--color-black);
+    color: var(--panel-color);
   }
   
   .btn:hover{
