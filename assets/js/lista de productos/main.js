@@ -1,12 +1,36 @@
+import KEYS from "../../stripe/Keys.js"
+
+
+const options = { headers: {Authorization: `Bearer ${KEYS.secret}`}}
+const FormatoDeMoneda = num => `${num.slice(0, -2)}.${num.slice(-2)}`;
 let productos = [];
 
-fetch("./assets/json/productos.json")
-    .then(response => response.json())
-    .then(data => {
-        productos = data;
-        cargarProductos(productos);
-    })
+Promise.all([
+    fetch("https://api.stripe.com/v1/products", options),
+    fetch("https://api.stripe.com/v1/prices", options)
+])
+.then(responses => Promise.all(responses.map(res => res.json())))
+.then(json => {
+    let products = json[0].data;
+    let prices = json[1].data;
+    productos = prices.map(el => {
+        let productData = products.filter(product => product.id === el.product);
+        return {
+            id: productData[0].id,
+            titulo: productData[0].name,
+            imagen: productData[0].images[0],
+            precio: FormatoDeMoneda(el.unit_amount_decimal),
+            categoria: {id: productData[0].metadata.categoria, nombre: productData[0].metadata.categoria},
+            id_precio: el.id
+        }
+    });
+    cargarProductos(productos);
+})
+.catch(error => {
+    let message = error.statuText || "Ocurrió un error en la petición";
 
+    console.log(`Error: ${error.status}: ${message} ${error}`);
+});
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -52,7 +76,7 @@ botonesCategorias.forEach(boton => {
 
         if (e.currentTarget.id != "todos") {
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
-            tituloPrincipal.innerText = productoCategoria.categoria.nombre;
+            //tituloPrincipal.innerText = productoCategoria.categoria.nombre;
             const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
             cargarProductos(productosBoton);
         } else {
