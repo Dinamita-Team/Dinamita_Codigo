@@ -683,3 +683,57 @@ nav.close ~ .dashboard .top{
 
   
   
+
+  /* Estilos generales */
+/* ... (coloca aquí los estilos generales) */
+
+/* Media query para pantallas pequeñas (hasta 767px) */
+@media screen and (max-width: 767px) {
+  /* Estilos específicos para pantallas pequeñas */
+  nav {
+    /* Ajusta el ancho del menú lateral para pantallas pequeñas */
+    width: 100%;
+    left: 0;
+  }
+
+  nav .menu-items {
+    /* Ajusta el alto del menú lateral para pantallas pequeñas */
+    height: auto;
+    flex-direction: row;
+  }
+
+  nav .menu-items li {
+    /* Ajusta el espacio entre los elementos del menú lateral para pantallas pequeñas */
+    margin-right: 10px;
+  }
+
+  nav .logo-name .logo_name {
+    /* Ajusta el tamaño del logo y el texto del nombre para pantallas pequeñas */
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .dashboard {
+    /* Ajusta el margen izquierdo del contenido principal para pantallas pequeñas */
+    left: 0;
+    width: 100%;
+  }
+
+  nav.close ~ .dashboard {
+    /* Ajusta el margen izquierdo del contenido principal para pantallas pequeñas con menú cerrado */
+    left: 0;
+    width: 100%;
+  }
+}
+
+/* Media query para pantallas medianas (768px a 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Estilos específicos para pantallas medianas */
+  /* ... (ajusta los estilos según tus necesidades) */
+}
+
+/* Media query para pantallas grandes (a partir de 992px) */
+@media screen and (min-width: 992px) {
+  /* Estilos específicos para pantallas grandes */
+  /* ... (ajusta los estilos según tus necesidades) */
+}
