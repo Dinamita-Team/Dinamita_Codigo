@@ -441,6 +441,13 @@ footer{
     }
 }
 
+@media (max-width: 350px) {
+    .contenedor-productos{
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
 
         @media (max-width: 820px) {
             /* Mobile styles for dashboard and nav */
@@ -468,28 +475,5 @@ footer{
             .close-menu {
                 display: block;
             }
-        }
 
-        @media (max-width: 945px) {
-            /* Tablet styles */
-            .main-productos {
-                padding: 0;
-            }
-            .contenedor-productos {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-        }
-
-        @media (max-width: 1075px) {
-            /* Adjustments for wider screens */
-            .body {
-                width: 100vw;
-            }
-            .profile-photo {
-                display: none;
-            }
-            .contenedor-productos {
-                gap: 1.2rem;
-            }
         }
