@@ -1,13 +1,13 @@
 import KEYS from "../../stripe/Keys.js"
 
-
+const productsLimit = 100;
 const options = { headers: {Authorization: `Bearer ${KEYS.secret}`}}
 const FormatoDeMoneda = num => `${num.slice(0, -2)}.${num.slice(-2)}`;
 let productos = [];
 
 Promise.all([
-    fetch("https://api.stripe.com/v1/products", options),
-    fetch("https://api.stripe.com/v1/prices", options)
+    fetch(`https://api.stripe.com/v1/products?limit=${productsLimit}`, options),
+    fetch(`https://api.stripe.com/v1/prices?limit=${productsLimit}`, options)
 ])
 .then(responses => Promise.all(responses.map(res => res.json())))
 .then(json => {
@@ -78,6 +78,7 @@ botonesCategorias.forEach(boton => {
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             tituloPrincipal.innerText = productoCategoria.categoria.nombre;
             const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+            console.log(e.currentTarget.id);
             cargarProductos(productosBoton);
         } else {
             tituloPrincipal.innerText = "Todos los productos";
