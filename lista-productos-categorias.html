@@ -4,70 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DINAMITA - EXPLORAR</title>
+    <title>Dinamita - Explorar</title>
     <link rel="shortcut icon" href="./assets/img/dinamita-con-cronómetro.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
     <link rel="stylesheet" href="./assets/css/productos-index.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
-
-    <div class="wrapper">
-        <header class="header-mobile">
-            <a href="index.html"><h1 class="logo">DINAMITA</h1></a>
-            <button class="open-menu" id="open-menu">
-                <i class="bi bi-list"></i>
-            </button>
-        </header>
-        <aside class="aside-Productos">
-            <button class="close-menu" id="close-menu">
-                <i class="bi bi-x"></i>
-            </button>
-            <header>
-                <a href="index.html"><h1 class="logo">DINAMITA</h1></a>
-            </header>
-            <nav>
-                <ul class="menu">
-
-                    <li>
-                        <button id="todos" class="boton-menu boton-categoria active"></i> Todos los productos</button>
-                    </li>
-                    <li>
-                        <button id="accesorios" class="boton-menu boton-categoria"></i> Accesorios</button>
-                    </li>
-                    <li>
-                        <button id="gadgets" class="boton-menu boton-categoria"></i> Gadgets</button>
-                    </li>
-                    <li>
-                        <button id="sonido" class="boton-menu boton-categoria"></i> Sonido</button>
-                    </li>
-                    <li>
-                        <button id="dron" class="boton-menu boton-categoria"></i> Drones</button>
-                    </li>
-
-                    <li>
-                        <a class="boton-menu boton-carrito" href="./carrito.html">
-                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main-lista-productos">
-            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
-            <div id="contenedor-productos" class="contenedor-productos">
-                <!-- Esto se va a rellenar con JS -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="./assets/img/dinamita-con-cronómetro.png" alt="">
             </div>
-        </main>
-    </div>
+
+            <img class="logo-name-banner" src="./assets/img/dinamita-banners/horizontal, sin dinamita, fondo blanco, letras rojas-amarillas.png" alt="">
+        </div>
+
+        <div class="menu-items" id="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-home"></i>
+                    <span class="link-name">Inicio</span>
+                </a></li>
+                <li><a href="./lista-productos-categorias.html">
+                    <i class="uil uil-compass"></i>
+                    <span class="link-name">Explorar</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-bookmark"></i>
+                    <span class="link-name">Guardados</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-history"></i>
+                    <span class="link-name">Historial de Compras</span>
+                </a></li>
+                <li><a href="contacto.html">
+                    <i class="uil uil-envelope-alt"></i>
+                    <span class="link-name">Contactanos</span>
+                </a></li>
+                <li><a href="acerca_de_nosotros.html">
+                    <i class="uil uil-info-circle"></i>
+                    <span class="link-name">Sobre Nosotros</span>
+                </a></li>
+                <li><a href="configuracion.html">
+                    <i class="uil uil-setting"></i>
+                    <span class="link-name">Configuracion</span>
+                </a></li>
+                
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#" id="logout">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="dashboard">
+         <!-- <div class="wrapper">  -->
+            <div class="barralateral top">
+                <i class="uil uil-bars sidebar-toggle"></i>
+                <div class="container-search">
+                    <div class="search-bar">
+                      <i class="uil uil-search"></i>
+                      <input type="search" name="" id="" placeholder="Busca el producto">
+                      <i class="uil uil-filter"></i>
+                    </div>
+                    <div class="create">
     
-    <footer>
-        <p class="texto-footer">© 2023 | Generation | Dinamita Team </p>
-    </footer>
+                      <div class="btn" id="btn">
+                        <a href="./carrito.html" class="carrito" id="carrito">
+                            <i class="uil uil-shopping-cart">
+                                <span id="numerito" class="numerito">0</span>
+                            </i>
+                        </a>
+                      </div>
+             
+                    </div>
+                  </div>
+            </div>
+
+            <aside class="aside-Productos">
+
+                <div>
+                    <ul class="menu">
+
+                        <li>
+                            <button id="todos" class="boton-menu boton-categoria active"></i> Todos los productos</button>
+                        </li>
+                        <li>
+                            <button id="smartphones" class="boton-menu boton-categoria"></i> Smartphones</button>
+                        </li>
+                        <li>
+                            <button id="accesorios" class="boton-menu boton-categoria"></i> Accesorios</button>
+                        </li>
+                        <li>
+                            <button id="gadgets" class="boton-menu boton-categoria"></i> Gadgets</button>
+                        </li>
+                        <li>
+                            <button id="sonido" class="boton-menu boton-categoria"></i> Sonido</button>
+                        </li>
+                        <li>
+                            <button id="dron" class="boton-menu boton-categoria"></i> Drones</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </aside>
+            <main class="main-lista-productos main-productos">
+                <!--<h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>-->
+                <div id="contenedor-productos" class="contenedor-productos">
+                    <!-- Esto se va a rellenar con JS -->
+                </div>
+            </main>
+        <!-- </div> -->
+    </section>
+
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script src="./assets/js/lista de productos/main.js" type="module"></script>
     <script src="./assets/js/lista de productos/menu.js"></script>
-    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+>>>>>>> review
 </body>
 </html>
