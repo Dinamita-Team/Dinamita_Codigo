@@ -98,7 +98,7 @@ const enviarInformacion = (event) => {
      
 };
 
-formulario.phone.addEventListener('keyup', validarTelefono);
+formulario.phone.addEventListener('keyup', validarTelefono);           
 formulario.name.addEventListener('keyup', validarNombre);
 formulario.name.addEventListener('keydown', validarNombre);
 formulario.addEventListener('submit', enviarInformacion);
