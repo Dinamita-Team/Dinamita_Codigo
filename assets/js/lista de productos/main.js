@@ -78,10 +78,10 @@ botonesCategorias.forEach(boton => {
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             //tituloPrincipal.innerText = productoCategoria.categoria.nombre;
             const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
-            console.log(e.currentTarget.id);
+            //console.log(e.currentTarget.id);
             cargarProductos(productosBoton);
         } else {
-            tituloPrincipal.innerText = "Todos los productos";
+            //tituloPrincipal.innerText = "Todos los productos";
             cargarProductos(productos);
         }
 
