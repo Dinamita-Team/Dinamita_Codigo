@@ -21,13 +21,15 @@ body{
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
+    padding: 0 1.5em; 
 }
 
 .logo{
     text-align: center;
     font-size: 3em;
     color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .logo span{
@@ -146,5 +148,9 @@ body{
     }
 }
 
-
+@media (max-width: 435px) {
+    h1 {
+      display: none; /* Cambiar el tamaño del texto en pantallas pequeñas */
+    }
+  }
 
