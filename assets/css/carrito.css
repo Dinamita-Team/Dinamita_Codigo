@@ -58,17 +58,6 @@ aside {
 .logo a{
     color: var(--clr-red);
 }
-.logo-name{
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-}
-
-.logo-image{
-    position: relative;
-    width: 50%;
-    height: 50%;
-}
 
 .menu {
     display: flex;
