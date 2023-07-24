@@ -40,6 +40,6 @@ loginForm.addEventListener('submit', (e)=>{
     /**Esta línea redirige al usuario a la página "index.html". Cambia la propiedad href de window.location para apuntar a la URL especificada, en este caso, "index.html". 
      * 
      * Esto provoca que el navegador cargue la página "index.html" y la muestre al usuario. */
-    window.location.href = 'index.html'   
+    window.location.href = 'index.html';   
 
 })

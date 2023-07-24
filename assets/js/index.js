@@ -1,3 +1,5 @@
+/*----------------inicio de sesión y logout -------------------*/
+
 /**Esta línea declara una constante llamada user. Utiliza el método getItem() del objeto localStorage para obtener el valor almacenado en la clave 'login_success'. 
  * 
  * El resultado se pasa a JSON.parse() para convertirlo de una cadena JSON a un objeto JavaScript. Si no se encuentra ningún valor en 'login_success', se establece el valor de user como false. */
@@ -22,3 +24,41 @@ logout.addEventListener('click', ()=>{
     /**Esta línea redirige la página actual a 'login.html' utilizando la propiedad href del objeto window.location. Esto enviará al usuario de vuelta a la página de inicio de sesión después de cerrar la sesión. */
     window.location.href = 'login.html'
 })
+
+/*----------------------------------------------------------*/
+/*ex tienda.js----------------------------------------------*/
+
+
+const body = document.querySelector("body"),
+      modeToggle = body.querySelector(".mode-toggle");
+      sidebar = body.querySelector("nav");
+      sidebarToggle = body.querySelector(".sidebar-toggle");
+
+let getMode = localStorage.getItem("mode");
+if(getMode && getMode ==="dark"){
+    body.classList.toggle("dark");
+}
+
+let getStatus = localStorage.getItem("status");
+if(getStatus && getStatus ==="close"){
+    sidebar.classList.toggle("close");
+}
+
+modeToggle.addEventListener("click", () =>{
+    body.classList.toggle("dark");
+    if(body.classList.contains("dark")){
+        localStorage.setItem("mode", "dark");
+    }else{
+        localStorage.setItem("mode", "light");
+    }
+});
+
+sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+    if(sidebar.classList.contains("close")){
+        localStorage.setItem("status", "close");
+    }else{
+        localStorage.setItem("status", "open");
+    }
+})
+

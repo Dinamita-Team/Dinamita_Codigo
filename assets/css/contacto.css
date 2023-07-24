@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: #181818;
+    background-color: #ffffff;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     padding: 0 1.5em;
@@ -21,16 +21,19 @@ body{
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
+    padding: 0 1.5em; 
 }
 
 .logo{
     text-align: center;
     font-size: 3em;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .logo span{
-    color: #b70e21;
+    color: hsl(357, 89%, 48%);
 }
 
 .contact-wrapper{
@@ -43,6 +46,8 @@ body{
 
 .contact-form{
     background: #222222;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .contact-form form{
@@ -68,12 +73,13 @@ body{
     background: none;
     outline: none;
     color: #fff;
-    border-bottom: 1px solid #d63031;
+    border-bottom: 1px solid hsl(357, 89%, 48%);
 }
 
 .contact-form form button{
-    background: #b70e21;
+    background: hsl(357, 89%, 48%);
     border: none;
+    border-radius: 1em;
     text-transform: uppercase;
     padding: 1em;
 }
@@ -90,7 +96,10 @@ body{
 }
 
 .contact-info{
-    background: #000;
+    background:  hsl(252, 30%, 95%);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    color: black;
 }
 
 .contact-info h4,
@@ -110,7 +119,7 @@ body{
 }
 
 /*LARGE SCREEN*/
-@media(min-width: 1150px){
+@media(min-width: 1050px){
     body{
         padding: 0 4rem;
     }
@@ -127,7 +136,21 @@ body{
         padding: 1em;
         text-align: left;
     }
+    .contact-form{
+        border-radius: 0;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+    .contact-info{
+        border-radius: 0;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
 }
 
-
+@media (max-width: 435px) {
+    h1 {
+      display: none; /* Cambiar el tamaño del texto en pantallas pequeñas */
+    }
+  }
 

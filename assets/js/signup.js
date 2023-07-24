@@ -1,12 +1,33 @@
 // Selecciona el elemento del documento HTML con el id signupForm y lo almacena en la variable signupForm. Esto asume que hay un elemento en el documento con ese id.
 const signupForm = document.querySelector('#signupForm')
 
+const validarNombre = (event) => {
+    const nameSpaceRegex = /(\s{2,})/g;
+    const letrasRegex = /(\d+)/g;
+    const RegExp = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+    let nombre = signupForm.name.value;
+    if(nombre.trim()===""){
+        signupForm.name.value = "";
+    }
+    if(nameSpaceRegex.test(nombre)){
+        signupForm.name.value = nombre.substring(0, nombre.length -1);  
+    }
+    if(letrasRegex.test(nombre)){
+        signupForm.name.value = nombre.substring(0, nombre.length -1);
+    }
+    if(RegExp.test(nombre)){
+        signupForm.name.value = nombre.substring(0, nombre.length -1);  
+    }
+}
+
+
 // Agrega un evento de escucha al formulario signupForm cuando se envía (submit). Cuando se envía el formulario, se ejecutará la función proporcionada como segundo argumento. e es el objeto de evento que se pasa a la función.
 signupForm.addEventListener('submit', (e)=>{
     // Detiene el comportamiento predeterminado del evento de envío del formulario. En este caso, evita que la página se recargue después de enviar el formulario.
     e.preventDefault()
     // Selecciona el elemento del documento HTML con el id name y obtiene el valor ingresado en ese campo de entrada. El valor se almacena en la variable name.
-    const name = document.querySelector('#name').value
+    const name = document.querySelector('#name').value.toUpperCase();
+    
     // Selecciona el elemento del documento HTML con el id email y obtiene el valor ingresado en ese campo de entrada. El valor se almacena en la variable email.
     const email = document.querySelector('#email').value
     // Selecciona el elemento del documento HTML con el id password y obtiene el valor ingresado en ese campo de entrada. El valor se almacena en la variable password.
@@ -36,6 +57,8 @@ signupForm.addEventListener('submit', (e)=>{
     // Se muestra una ventana emergente en el navegador con el mensaje "Registro Exitoso!". Esta línea proporciona una notificación al usuario de que el registro se ha realizado con éxito.
     alert('Registro Exitoso!')
     // Esta línea redirige al usuario a la página login.html. La propiedad location.href del objeto window se establece en la URL 'login.html', lo que provoca que el navegador navegue a esa página.
-    window.location.href = 'login.html'
-
+    window.location.href = 'index.html'
 })
+
+signupForm.name.addEventListener('keyup', validarNombre);
+signupForm.name.addEventListener('keydown', validarNombre);

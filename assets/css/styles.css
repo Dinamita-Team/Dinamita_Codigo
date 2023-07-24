@@ -9,26 +9,32 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+
 }
 
 body{
+    width: 98vw;
+    height: 98vh;
     font-family: var(--font-mono);
     background-color: rgba(230, 14, 26, 1);
-    background-image: url("../img/DINAMITA.png");
-    background-size: 70em 90em;
-    background-position: center center;
+    background-image: url("../img/dinamita-banners/diagonal\,\ fondo\ rojo\,\ letras\ blancas-amarillas.png");
+    background-position: left center;
     background-repeat: no-repeat;
 }
 
 section{
     display:flex;
-    flex-wrap: wrap;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 1em;
+    width: 60vw;
+    position: relative;
+    left: 30rem;
+    top: 4rem;
 }
+
+
 
 section h1{
     font-size: 3em;
@@ -56,12 +62,14 @@ section form{
 
 section form label{
     width: 100%;
+    font-size: medium;
     padding: 0.2em;
     margin-bottom: 0.5em;
 }
 
-section form input{
+ section form input{
     width: 100%;
+    font-size: medium;
     margin-bottom: 1em;
     padding: 0.8em;
     border-radius: 9px;
@@ -70,27 +78,19 @@ section form input{
     background-color: #eee;
 }
 
-section form input[type='submit']{
-    margin-top: 1.5em;
-    background-color: goldenrod;
-    color: #fff;
-    font-family: var(--font-mono);
-    transition: var(--transition);
-} 
-
-section form input[type='submit']:active{
-    transform: scale(0.97);
-}
 
 section p{
     margin-top: 1.5em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
 
 }
 
 
 section p a{
     text-decoration: none;
-    color: #003DFF;
+    color: #FBC400;
 }
 
 
@@ -107,3 +107,136 @@ section button{
     margin-top: 1.5em;
     font-size: 1em;
 }
+
+section form input[type='submit']{
+    width: 100%;
+    padding-block: 20px;
+    background: linear-gradient(to right, #E60E1A, #F42F2F, #FBC400 );
+    margin-top: 2rem;
+    background-size: 180% 180%;
+    background-position: center;
+    color: #fff;
+    font-size: large;
+	animation: gradient-animation 3s ease infinite;
+    cursor: pointer;
+}
+
+/*Sign up*/
+.sectionSignup{
+    position: relative;
+    top: 0;
+}
+
+.parrafo{
+    margin: 1rem;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+section form input[type='submit']:active{
+    transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+    body{
+        background: #E60E1A;
+        height: 90vh;
+        width: 100vw;
+    }
+    section {
+        width: 90%;
+        height: 90%;
+      margin: 0 auto;
+      position: relative;
+      left: 0;
+
+
+    }
+    .sectionSignup{
+        height: 60vh;
+        position: relative;
+        top: 5.3rem;
+    }
+
+    section p{
+        margin-top: 1.2rem;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2rem;
+    
+    }
+  }
+
+ 
+  
+  @media (max-width: 480px) {
+
+    section{
+        width: 100%;
+        height: 90%;
+    }
+    section h1 {
+      font-size: 2.5em;
+    }
+    section h2 {
+      font-size: 2em;
+    }
+    section form {
+      padding: 1em;
+      max-width: 90%;
+    }
+    section form input {
+      font-size: 16px;
+    }
+    section form label {
+      font-size: 16px;
+    }
+    section form input[type='submit'] {
+      font-size: 18px;
+    }
+    section p {
+        padding-top: 1rem;
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        justify-content: center;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    section {
+      top: 1rem;
+      height: 90vh;
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+    }
+    section h1 {
+      font-size: 2em;
+    }
+    section h2 {
+      font-size: 1.8em;
+    }
+    section form input[type='submit'] {
+      font-size: 16px;
+    }
+    section p{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        justify-content: center;
+        text-align: center;
+    }
+  }
+  

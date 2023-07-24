@@ -1,0 +1,103 @@
+[
+    {
+        "id": "construccion-01",
+        "titulo": "Auriculares Pro 6",
+        "imagen": "./assets/img/productos/auriculares/1.webp",
+        "categoria": {
+            "nombre": "Sonido",
+            "id": "sonido"
+        },
+        "precio": 120000
+    },
+    {
+        "id": "construccion-02",
+        "titulo": "Bombillo Smart RGB",
+        "imagen": "./assets/img/productos/bombillo/1.webp",
+        "categoria": {
+            "nombre": "Gadgets",
+            "id": "gadgets"
+        },
+        "precio": 40890
+    },
+    {
+        "id": "construccion-03",
+        "titulo": "Cámara de acción 4K",
+        "imagen": "./assets/img/productos/camara/1.webp",
+        "categoria": {
+            "nombre": "Gadgets",
+            "id": "gadgets"
+        },
+        "precio": 210900
+    },
+    {
+        "id": "construccion-04",
+        "titulo": "Dron R11 FHD - Gris",
+        "imagen": "./assets/img/productos/dron%20gris/1.webp",
+        "categoria": {
+            "nombre": "Drones",
+            "id": "drones"
+        },
+        "precio": 889900
+    },
+    {
+        "id": "construccion-05",
+        "titulo": "Dron R9 HD - Negro",
+        "imagen": "./assets/img/productos/dron%20negro/1.webp",
+        "categoria": {
+            "nombre": "Drones",
+            "id": "drones"
+        },
+        "precio": 669900
+    },
+    {
+        "id": "construccion-06",
+        "titulo": "Gafas S3 - Conección NFC",
+        "imagen": "./assets/img/productos/gafas/1.webp",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 250900
+    },
+    {
+        "id": "construccion-07",
+        "titulo": "Micrófono Ultraportable - M1",
+        "imagen": "./assets/img/productos/microfono/1.webp",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 19990
+    },
+    {
+        "id": "construccion-08",
+        "titulo": "Parlante Boom 3 - RGB, Multiconexión",
+        "imagen": "./assets/img/productos/parlante/1.webp",
+        "categoria": {
+            "nombre": "Sonido",
+            "id": "sonido"
+        },
+        "precio": 47700
+    },
+    {
+        "id": "herramienta-01",
+        "titulo": "Smartwatch Pro X - Acero Inoxidable",
+        "imagen": "./assets/img/productos/reloj/1.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1390000
+    },
+    {
+        "id": "herramienta-02",
+        "titulo": "Smart Air - Ventilador portatil",
+        "imagen": "./assets/img/productos/ventilador/1.webp",
+        "categoria": {
+            "nombre": "Gadgets",
+            "id": "gadgets"
+        },
+        "precio": 28900
+    }
+
+]
