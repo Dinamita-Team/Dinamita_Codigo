@@ -24,9 +24,6 @@ public class users {
     @Column(name = "avatar")
     private String avatar;
 
-    @Column(name = "email_verified_at")
-    private String email_verified_at;
-
     @Column(name = "password")
     private String password;
 
@@ -36,11 +33,6 @@ public class users {
     @Column(name = "settings")
     private String settings;
 
-    @Column(name = "created_at")
-    private Timestamp created_at;
-
-    @Column(name = "updated_at")
-    private Timestamp updated_at;
 
     //id, role_id, name, email, avatar, email_verified_at, password, remember_token, settings, created_at, updated_at
 
@@ -86,14 +78,6 @@ public class users {
         this.avatar = avatar;
     }
 
-    public String getEmail_verified_at() {
-        return email_verified_at;
-    }
-
-    public void setEmail_verified_at(String email_verified_at) {
-        this.email_verified_at = email_verified_at;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -118,19 +102,4 @@ public class users {
         this.settings = settings;
     }
 
-    public Timestamp getCreated_at() {
-        return created_at;
-    }
-
-    public void setCreated_at(Timestamp created_at) {
-        this.created_at = created_at;
-    }
-
-    public Timestamp getUpdated_at() {
-        return updated_at;
-    }
-
-    public void setUpdated_at(Timestamp updated_at) {
-        this.updated_at = updated_at;
-    }
 }

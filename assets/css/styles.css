@@ -17,7 +17,7 @@ body{
     height: 98vh;
     font-family: var(--font-mono);
     background-color: rgba(230, 14, 26, 1);
-    background-image: url("../img/DINAMITA.png");
+    background-image: url("../img/dinamita-banners/diagonal\,\ fondo\ rojo\,\ letras\ blancas-amarillas.png");
     background-position: left center;
     background-repeat: no-repeat;
 }
@@ -90,7 +90,7 @@ section p{
 
 section p a{
     text-decoration: none;
-    color: #003DFF;
+    color: #FBC400;
 }
 
 
@@ -116,7 +116,7 @@ section form input[type='submit']{
     background-size: 180% 180%;
     background-position: center;
     color: #fff;
-    font-size: medium;
+    font-size: large;
 	animation: gradient-animation 3s ease infinite;
     cursor: pointer;
 }
