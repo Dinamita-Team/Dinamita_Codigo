@@ -214,7 +214,7 @@ main {
     justify-self: center;
     align-self: center;
     min-height: 78vh;
-    min-width: 94vw;
+    min-width: 98%;
 }
 
 .contenedor-carrito {
@@ -229,6 +229,18 @@ main {
     text-align: center;
     font-size: 4vw;
     padding-block: 10vh;
+}
+
+.boton-menu{
+    justify-content: center;
+}
+
+.bi-arrow-return-left{
+    padding: 1%;
+    border-radius: 0.5em;
+    background-color: lightgrey;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .carrito-productos {
