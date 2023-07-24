@@ -41,3 +41,14 @@ body {
 #menu-items{
   left: 0;
 }
+
+@media screen and (max-width: 600px) {
+  nav{
+    display: none;
+  }
+  .tab-content{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+}
