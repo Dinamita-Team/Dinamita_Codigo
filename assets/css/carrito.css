@@ -206,7 +206,7 @@ main {
 #main-carrito{
     justify-self: center;
     align-self: center;
-    min-height: 78vh;
+    min-height: 76vh;
     min-width: 98%;
 }
 
@@ -231,7 +231,7 @@ main {
 .bi-arrow-return-left{
     padding: 1%;
     border-radius: 0.5em;
-    background-color: lightgrey;
+    background-color: var(--clr-main);
     font-style: normal;
     font-weight: 400;
 }
@@ -324,7 +324,7 @@ main {
 
 footer{
     background-color: var(--clr-main);
-    padding: 3em;
+    padding: 2em;
 }
 
 .texto-footer{
