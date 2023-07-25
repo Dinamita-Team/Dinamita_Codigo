@@ -140,8 +140,8 @@ function comprarCarrito() {
         Stripe(KEYS.public).redirectToCheckout({
             lineItems: items,
             mode: "payment",
-            successUrl:"http://127.0.0.1:5501/success.html",
-            cancelUrl:"http://127.0.0.1:5501/cancel.html",
+            successUrl:"../../../success.html",
+            cancelUrl:"../../../cancel.html",
         })
         .then(res => {
             if (res.error){
