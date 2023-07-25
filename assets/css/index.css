@@ -166,15 +166,16 @@ nav.close .logo_name{
   }
  
   
-  .btn{
+  .btn {
     display: inline-block;
-    padding: var(--btn-padding);
+    padding-block: .3em !important;
+    padding-inline: 1.5em !important;
     font-weight: 500;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) !important;
     cursor: pointer;
     transition: all 300ms ease;
-    background: var(--color-primary);
-    color: white;
+    background: var(--color-primary) !important;
+    color: var(--text-color);
   }
 
   .carrito{
@@ -212,16 +213,21 @@ nav.close .logo_name{
 
   
   div .search-bar{
-    background: var(--color-light);
+    background: var(--clr-gray);
     border-radius: var(--border-radius);
     padding: var(--search-padding);
     display: flex;
     align-items: center;
+    width: 80%;
+  }
+
+  div .search-bar ::placeholder{
+    color: var(--clr-main);
   }
   
   div .search-bar input[type="search"]{
     background: transparent;
-    width: 40vw;
+    width: 100%;
     margin-left:2rem ;
     font-size: 0.9rem;
     color: var(--color-dark);
