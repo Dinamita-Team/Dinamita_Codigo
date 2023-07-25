@@ -4,60 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icono pestaña -->
     <link rel="shortcut icon" href="assets/img/icono.ico" type="image/x-icon">
     
     <title>DINAMITA - Página de contacto</title>
     <link rel="stylesheet" href="assets/css/contacto.css">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="assets/css/index.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!----===== Boostrap ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <title>Dinamita Shop</title> 
 </head>
 <body>
-    <main>
-        <div class="content" id="content">
-            <h1 class="logo">Contacta<span>nos</span></h1>
-            <div class="contact-wrapper"> 
-                <div class="contact-form" id="contact-container">
-                    <h3>Dinamita team</h3>
-                    <form id="contactForm"  action="https://formspree.io/f/xqkovwnj"
-                    method="POST">
-                        <p class="block">
-                            <label for="name">Nombre completo</label>
-                            <input type="text" name="name" id="name" required>
-                        </p>
-                        <p>
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" required>
-                        </p>
-                        <p>
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" name="phone" id="phone" required>
-                        </p>
-                    
-                        <p class="block">
-                            <label for="">Mensaje</label>
-                            <textarea name="message" id="" cols="30" rows="3" required></textarea>
-                        </p>
-                        <p class="block">
-                            <button type="submit">Enviar</button>
-                        </p>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <h4>Más Información</h4>
-                    <ul>
-                        <li><i class="fa-solid fa-location-dot"></i> Bogotá, Colombia</li>
-                        <li><i class="fa-solid fa-square-phone"></i> +57 300 333 3030</li>
-                        <li><i class="fa-solid fa-square-envelope"></i> dinamita@gmail.com</li>
-                    </ul>
-                    <p>Somos un equipo apasionado y comprometido en busca del crecimiento constante de nuestra empresa. Con determinación, hemos lanzado Dinamita Shop como nuestro proyecto insignia.</p>
-                    <p>dinamita.com</p>
-                </div>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="./assets/img/dinamita-con-cronómetro.png" alt="">
             </div>
+
+            <img class="logo-name-banner" src="./assets/img/dinamita-banners/logo.png" alt="">
         </div>
-    </main>
 
-    <footer>
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-home"></i>
+                    <span class="link-name">Inicio</span>
+                </a></li>
+                <li><a href="./lista-productos-categorias.html">
+                    <i class="uil uil-compass"></i>
+                    <span class="link-name">Explorar</span>
+                </a></li>
+                <!--<li><a href="#">
+                    <i class="uil uil-shopping-cart"></i>
+                    <span class="link-name">Carrito</span>
+                </a></li>-->
+                <li><a href="#">
+                    <i class="uil uil-history"></i>
+                    <span class="link-name">Historial de Compras</span>
+                </a></li>
+                <li><a href="contacto.html">
+                    <i class="uil uil-envelope-alt"></i>
+                    <span class="link-name">Contactanos</span>
+                </a></li>
+                <li><a href="acerca_de_nosotros.html">
+                    <i class="uil uil-info-circle"></i>
+                    <span class="link-name">Sobre Nosotros</span>
+                </a></li>
+                <li><a href="configuracion.html">
+                    <i class="uil uil-setting"></i>
+                    <span class="link-name">Configuracion</span>
+                </a></li>
+                
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#" id="logout">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
 
-    </footer>
-    <script src="./assets/js/contacto.js"></script>
-    <script src="https://kit.fontawesome.com/f33f709eda.js" crossorigin="anonymous"></script>
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="barralateral top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            <div class="container-search">
+                <div class="search-bar">
+                  <i class="uil uil-search"></i>
+                  <input type="search" name="" id="" placeholder="Busca el producto">
+                  <i class="uil uil-filter"></i>
+                </div>
+                
+                <div class="create">
+                  <div class="btn">
+                    <a href="./carrito.html" class="carrito" style="text-decoration: none;">
+                        <i class="uil uil-shopping-cart">
+                            <span id="numerito" class="numerito">0</span>
+                        </i>
+                    </a>
+                  </div>
+
+                  <!--<div class="btn">
+                    <i class="uil uil-bell"></i>
+                  </div>-->
+        
+                 <div class="profile-photo">
+                    <img src="./assets/img/Images/Sarid.jfif" alt="">
+                  </div> 
+                </div>
+              </div>
+        </div>
+
+        <main>
+          <div class="content" id="content">
+              <!-- <h1 class="logo">Contacta<span>nos</span></h1> -->
+              <div class="contact-wrapper"> 
+                  <div class="contact-form" id="contact-container">
+                      <h3>Dinamita team</h3>
+                      <form id="contactForm"  action="https://formspree.io/f/xqkovwnj"
+                      method="POST">
+                          <p class="block">
+                              <label for="name">Nombre completo</label>
+                              <input type="text" name="name" id="name" required>
+                          </p>
+                          <p>
+                              <label for="email">E-mail</label>
+                              <input type="email" name="email" id="email" required>
+                          </p>
+                          <p>
+                              <label for="phone">Teléfono</label>
+                              <input type="tel" name="phone" id="phone" required>
+                          </p>
+                      
+                          <p class="block">
+                              <label for="">Mensaje</label>
+                              <textarea name="message" id="" cols="30" rows="3" required></textarea>
+                          </p>
+                          <p class="block">
+                              <button type="submit">Enviar</button>
+                          </p>
+                      </form>
+                  </div>
+                  <div class="contact-info">
+                      <h4>Más Información</h4>
+                      <ul>
+                          <li><i class="fa-solid fa-location-dot"></i> Bogotá, Colombia</li>
+                          <li><i class="fa-solid fa-square-phone"></i> +57 300 333 3030</li>
+                          <li><i class="fa-solid fa-square-envelope"></i> dinamita@gmail.com</li>
+                      </ul>
+                      <p>Somos un equipo apasionado y comprometido en busca del crecimiento constante de nuestra empresa. Con determinación, hemos lanzado Dinamita Shop como nuestro proyecto insignia.</p>
+                      <p>dinamita.com</p>
+                  </div>
+              </div>
+          </div>
+      </main>
+  
+
+      <script src="./assets/js/contacto.js"></script>
+      <script src="https://kit.fontawesome.com/f33f709eda.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/index.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!----======== Boostrap ======== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
