@@ -140,8 +140,8 @@ function comprarCarrito() {
         Stripe(KEYS.public).redirectToCheckout({
             lineItems: items,
             mode: "payment",
-            successUrl:"../../../success.html",
-            cancelUrl:"../../../cancel.html",
+            successUrl:"https://dinamita-shop.pages.dev/success.html",
+            cancelUrl:"https://dinamita-shop.pages.dev/cancel.html",
         })
         .then(res => {
             if (res.error){
