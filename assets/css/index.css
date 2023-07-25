@@ -159,10 +159,13 @@ nav.close .logo_name{
   } 
 
   .uil{
-    color:var(--clr-main);
+    color:var(--black-light-color);
     font-size: 1.4rem;
     padding: 0;
     margin: 0;
+  }
+  .uil-shopping-cart{
+    color:var(--clr-main);
   }
  
   
@@ -222,7 +225,7 @@ nav.close .logo_name{
   }
 
   div .search-bar ::placeholder{
-    color: var(--clr-main);
+    color: var(--black-light-color);
   }
   
   div .search-bar input[type="search"]{
@@ -1076,10 +1079,6 @@ nav.close ~ .dashboard .top{
     div .search-bar{
       position: relative;
       width: 500px;
-      left: 80px;
-    }
-    .create{
-      margin-left: 6rem;
     }
   }
   
@@ -1100,7 +1099,7 @@ nav.close ~ .dashboard .top{
     .contenedor-productos{
       grid-template-columns: repeat(1, 1fr);
     }
-    .container-search{
+    .container-search .search-bar{
       display: none;
     }
     

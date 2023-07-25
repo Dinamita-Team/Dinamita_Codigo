@@ -390,9 +390,6 @@ footer{
     nav{
         width: 200px;
     }
-    nav .logo-name .logo-name-banner{
-        margin: 0;
-    }
     .uil-bell{
         display: none;
     }
@@ -405,9 +402,7 @@ footer{
     }
     .container-search{
       position: relative;
-      width: 10rem;
-      left: 12rem;
-
+      width: 100%;
     }
     .uil .uil-bell{
       display: none;
