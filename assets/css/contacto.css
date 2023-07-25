@@ -5,6 +5,11 @@
     @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
 
+.root{
+    --text-color: #000;
+    --clr-main: #ffffff;
+}
+
 /*MOBILE FIRST*/
 *{
     box-sizing: border-box;
@@ -14,14 +19,13 @@ body{
     background-color: #ffffff;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    padding: 0 1.5em;
 }
 
 .content{
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1.5em; 
+    padding: 4em; 
 }
 
 .logo{
@@ -37,7 +41,10 @@ body{
 }
 
 .contact-wrapper{
-    box-shadow: 0 0 20px 0 rgba(255,255,255, 0.3);
+    box-shadow: 5px 5px 20px 5px rgba(80, 80, 80, 0.3);
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
 
 .contact-wrapper > *{
@@ -45,7 +52,7 @@ body{
 }
 
 .contact-form{
-    background: #222222;
+    background: var();
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
@@ -72,7 +79,7 @@ body{
     border: none;
     background: none;
     outline: none;
-    color: #fff;
+    color: var(--text-color);
     border-bottom: 1px solid hsl(357, 89%, 48%);
 }
 
@@ -82,6 +89,7 @@ body{
     border-radius: 1em;
     text-transform: uppercase;
     padding: 1em;
+    color: white;
 }
 
 .contact-form form button:hover{
@@ -120,12 +128,10 @@ body{
 
 /*LARGE SCREEN*/
 @media(min-width: 1050px){
-    body{
-        padding: 0 4rem;
-    }
     .contact-wrapper{
         display: grid;
         grid-template-columns: 2fr 1fr;
+
     }
     .contact-wrapper > *{
         padding: 2em;

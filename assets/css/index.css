@@ -366,13 +366,13 @@ nav.close ~ .dashboard{
     top: 0;
     left: 250px;
     display: flex;
-    width: calc(100% - 250px);
+    /* width: calc(100% - 250px); */
     justify-content: space-between;
     align-items: center;
     padding: 10px 14px;
     background-color: var(--panel-color);
     transition: var(--tran-05);
-    z-index: 10;
+    /* z-index: 10; */
 }
 nav.close ~ .dashboard .top{
     left: 73px;
